@@ -3,239 +3,166 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Rickson Tavares - Transformo dados em decisões | Painéis de BI | Automação de Processos</title>
+    <title>Biiotech - BI, Dashboards e Automação</title>
 
     <style>
-        :root {
-            --azul-escuro: #1A4D8F;
-            --azul-medio: #2C6ECC;
-            --azul-claro: #E8F1FC;
-            --cinza-escuro: #1B1B1B;
-            --cinza-medio: #4A4A4A;
-            --cinza-claro: #F5F7FA;
-            --cta: #0057E7;
-            --fundo: #F5F7FA;
-            --fonte: "Inter", Arial, sans-serif;
-        }
-
         body {
             margin: 0;
-            background: var(--fundo);
-            font-family: var(--fonte);
-            line-height: 1.6;
-            color: var(--cinza-escuro);
+            font-family: 'Segoe UI', sans-serif;
+            background: #f4f5f7;
+            color: #222;
         }
 
         header {
-            background: var(--azul-escuro);
-            padding: 18px 40px;
-            color: white;
-            position: fixed;
+            background: white;
+            padding: 15px 40px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+            position: sticky;
             top: 0;
-            width: 100%;
-            box-shadow: 0 2px 6px rgba(0,0,0,0.15);
             z-index: 1000;
         }
 
-        header h1 {
-            margin: 0;
-            font-size: 22px;
-        }
-
-        nav {
-            margin-top: 6px;
+        .logo-header {
+            height: 55px;
         }
 
         nav a {
-            color: white;
-            margin-right: 20px;
+            margin-left: 25px;
             text-decoration: none;
-            font-weight: 500;
+            font-weight: 600;
+            color: #333;
         }
 
         nav a:hover {
-            text-decoration: underline;
+            color: #0056ff;
         }
 
-        .hero {
-            margin-top: 110px;
-            display: flex;
-            justify-content: space-between;
-            padding: 50px;
-            background: var(--azul-claro);
-            align-items: center;
-            border-radius: 8px;
-            width: 80%;
-            margin-left: auto;
-            margin-right: auto;
+        .hero-img {
+            background: url('imagens/TECH16.jpeg');
+            background-size: cover;
+            background-position: center;
+            height: 430px;
+            border-radius: 12px;
+            margin: 25px;
+            position: relative;
         }
 
-        .hero-text {
-            max-width: 55%;
-        }
-
-        .hero-text h2 {
-            font-size: 34px;
-            margin: 0 0 15px;
-            color: var(--azul-escuro);
-        }
-
-        .hero-text p {
-            font-size: 18px;
-            color: var(--cinza-medio);
-        }
-
-        .hero img {
-            width: 260px;
-            height: 260px;
-            object-fit: cover;
-            border-radius: 50%;
-            border: 6px solid white;
-            background: #ddd;
-        }
-
-        .btn-whatsapp {
-            background: var(--cta);
+        .hero-overlay {
+            position: absolute;
+            bottom: 35px;
+            left: 45px;
+            background: rgba(0,0,0,0.55);
+            padding: 35px;
+            border-radius: 10px;
             color: white;
-            padding: 14px 22px;
-            border-radius: 6px;
-            text-decoration: none;
-            font-size: 17px;
+            width: 45%;
+        }
+
+        .hero-overlay h1 {
+            font-size: 38px;
+            margin: 0;
+        }
+
+        .hero-overlay p {
+            margin-top: 12px;
+            font-size: 18px;
+        }
+
+        .cta-btn {
+            margin-top: 20px;
+            background: #007bff;
+            color: white;
+            padding: 14px 28px;
+            border-radius: 8px;
             display: inline-block;
-            margin-top: 15px;
+            text-decoration: none;
             font-weight: 600;
         }
 
-        .btn-whatsapp:hover {
-            background: #0047c2;
-        }
-
         .section {
-            width: 80%;
-            margin: 50px auto;
+            padding: 50px 40px;
         }
 
         .section h2 {
-            color: var(--azul-escuro);
-            margin-bottom: 15px;
-            font-size: 28px;
+            font-size: 32px;
         }
 
-        .cards {
-            display: flex;
-            gap: 20px;
+        .services-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 25px;
+            margin-top: 30px;
         }
 
-        .card {
+        .service-box {
             background: white;
-            padding: 20px;
-            border-radius: 8px;
-            flex: 1;
-            box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+            padding: 25px;
+            border-radius: 10px;
+            box-shadow: 0 3px 10px rgba(0,0,0,0.12);
         }
 
         footer {
-            background: var(--azul-escuro);
+            margin-top: 40px;
+            background: #111;
             color: white;
+            padding: 35px;
             text-align: center;
-            padding: 25px;
-            margin-top: 50px;
-        }
-
-        @media (max-width: 900px) {
-            .hero { flex-direction: column; text-align: center; }
-            .hero-text { max-width: 100%; }
-            .cards { flex-direction: column; }
-            .hero img { margin-top: 20px; }
         }
     </style>
 </head>
 
 <body>
 
-    <header>
-        <h1>Rickson Tavares - Transformo dados em decisões | Painéis de BI | Automação de Processos</h1>
-        <nav>
-            <a href="#servicos">Serviços</a>
-            <a href="#cases">Estudos de Caso</a>
-            <a href="#contato">Contato</a>
-        </nav>
-    </header>
+<header>
+    <img src="imagens/Biiotech.jpeg" class="logo-header" alt="Logo Biiotech">
 
-    <section class="hero">
-        <div class="hero-text">
-            <h2>Transformo dados em resultados reais para as empresas</h2>
-            <p>
-                Especialista em BI, automação e indicadores para varejo, indústria têxtil e atacado.
-                Atendimento presencial aos sábados.
-            </p>
+    <nav>
+        <a href="index.html">Início</a>
+        <a href="sobre.html">Sobre</a>
+        <a href="services.html">Serviços</a>
+        <a href="cases.html">Estudos de Caso</a>
+        <a href="#contato">Contato</a>
+    </nav>
+</header>
 
-            <a class="btn-whatsapp" 
-               href="https://wa.me/5581997333025?text=Olá,%20quero%20falar%20sobre%20consultoria%20em%20BI.">
-               Fale comigo no WhatsApp
-            </a>
-        </div>
+<section class="hero-img">
+    <div class="hero-overlay">
+        <h1>Transformo Dados em Lucro e Decisões Inteligentes</h1>
+        <p>Dashboards, automações e insights estratégicos para varejo, indústria têxtil, atacado e serviços no interior de Pernambuco.</p>
 
-        <!-- SUA FOTO AQUI -->
-        <img src="Foto-Prof.jpeg" alt="Sua foto profissional">
-    </section>
-
-    <section class="section" id="servicos">
-        <h2>Serviços</h2>
-        <div class="cards">
-            <div class="card">
-                <h3>Dashboards Power BI e Streamlit</h3>
-                <p>Vendas, estoque, produção e financeiro com indicadores claros e de fácil decisão.</p>
-            </div>
-
-            <div class="card">
-                <h3>Automação de Relatórios</h3>
-                <p>Integração entre ERP → BI, eliminando retrabalhos e planilhas manuais.</p>
-            </div>
-
-            <div class="card">
-                <h3>Consultoria Mensal</h3>
-                <p>Suporte contínuo, evolução dos Indicadores (KPIs) e acompanhamento estratégico.</p>
-            </div>
-        </div>
-    </section>
-
-    <section class="section" id="cases">
-        <h2>Estudos de Caso</h2>
-        <div class="cards">
-
-            <div class="card">
-                <h3>Atacado Têxtil — Santa Cruz</h3>
-                <p>Redução de 18% no estoque parado e entendimento claro da margem por produto.</p>
-            </div>
-
-            <div class="card">
-                <h3>Loja de Moda — Toritama</h3>
-                <p>Automação de relatórios e economia de 15 horas semanais do gestor.</p>
-            </div>
-
-            <div class="card">
-                <h3>PME — Vitória de Santo Antão</h3>
-                <p>Fluxo de caixa automatizado e projeção financeira com 90 dias de antecedência.</p>
-            </div>
-
-        </div>
-    </section>
-
-    <section class="section" id="contato">
-        <h2>Contato</h2>
-        <p>Agende um diagnóstico gratuito pelo WhatsApp:</p>
-
-        <a class="btn-whatsapp"
-           href="https://wa.me/5581997333025?text=Olá,%20quero%20agendar%20um%20diagnóstico%20gratuito.">
-           Falar pelo WhatsApp
+        <a href="https://wa.me/5581997333025" target="_blank" class="cta-btn">
+            Agendar diagnóstico gratuito
         </a>
-    </section>
+    </div>
+</section>
 
-    <footer>
-        © 2025 Rickson N. Tavares — Consultoria em BI & Análise de Dados  
-    </footer>
+<section class="section">
+    <h2>Como posso ajudar sua empresa</h2>
+
+    <div class="services-grid">
+        <div class="service-box">
+            <h3>Dashboards Profissionais</h3>
+            <p>Indicadores claros, visuais modernos e insights que reduzem erros e aceleram decisões.</p>
+        </div>
+
+        <div class="service-box">
+            <h3>Automação de Relatórios</h3>
+            <p>Eliminação de processos manuais e relatórios automáticos conectados ao seu ERP.</p>
+        </div>
+
+        <div class="service-box">
+            <h3>Consultoria Mensal (BI)</h3>
+            <p>Suporte contínuo: ajustes, evoluções e criação de novas análises conforme necessidade.</p>
+        </div>
+    </div>
+</section>
+
+<footer>
+    © 2025 Biiotech — Inteligência com propósito.
+</footer>
 
 </body>
 </html>
-
