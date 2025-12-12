@@ -1,39 +1,56 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="pt-BR">
 <head>
-<meta charset="utf-8"/><meta name="viewport" content="width=device-width,initial-scale=1"/>
-<title>Contato — Biiotech</title>
-<style>
- body{font-family:Inter,Arial,sans-serif;background:#f4f6fb;margin:0;color:#111}
- header{background:white;padding:12px 20px;border-bottom:1px solid #eee}
- .wrap{max-width:900px;margin:28px auto;padding:18px}
- form{background:white;padding:18px;border-radius:10px;box-shadow:0 8px 24px rgba(16,24,60,0.06)}
- label{display:block;margin-top:10px;font-weight:600}
- input,textarea,select{width:100%;padding:10px;margin-top:6px;border-radius:8px;border:1px solid #dfe6f2}
- .btn{display:inline-block;margin-top:12px;background:#007bff;color:#fff;padding:10px 14px;border-radius:8px;text-decoration:none;border:none}
- .hint{color:#555;margin-top:8px}
- footer{background:#0b1320;color:#fff;padding:18px;text-align:center;margin-top:18px}
-</style>
+  <meta charset="utf-8"/><meta name="viewport" content="width=device-width,initial-scale=1"/>
+  <title>Contato — Biiotech</title>
+  <link rel="stylesheet" href="style.css"/>
+  <meta name="description" content="Contato Biiotech — agende diagnóstico, reunião presencial / online ou solicite proposta via WhatsApp.">
 </head>
 <body>
-<header><img src="imagens/Biiotech.jpeg" alt="Biiotech" style="height:52px"/></header>
+<header class="header">
+  <div class="navbar">
+    <a class="logo" href="index.html"><img src="imagens/Biiotech.jpeg" alt="logo"/></a>
+    <nav><ul class="nav-links">
+      <li><a href="index.html">Início</a></li>
+      <li><a href="servicos.html">Serviços</a></li>
+      <li><a href="cases.html">Cases</a></li>
+      <li><a href="proposta.html">Proposta</a></li>
+      <li><a href="contato.html">Contato</a></li>
+    </ul></nav>
+  </div>
+</header>
 
-<main class="wrap">
-  <h1 style="color:#1A4D8F">Contato</h1>
-  <p>Agende uma reunião presencial (sábados no interior: Toritama, Santa Cruz do Capibaribe, Vitória) ou uma call remota.</p>
+<main class="container">
+  <section>
+    <h1>Contato</h1>
+    <div class="card">
+      <p class="small">Agende diagnóstico (15 min) ou reunião presencial / online. Preencha o formulário ou clique no WhatsApp.</p>
 
-  <form action="https://formsubmit.co/your-email@example.com" method="POST">
-    <label>Nome</label><input name="name" required>
-    <label>Empresa / Prefeitura</label><input name="company">
-    <label>Segmento</label><select name="segment"><option>Varejo</option><option>Indústria</option><option>Prefeitura</option><option>Contabilidade</option></select>
-    <label>Mensagem / Desafio</label><textarea name="message" rows="5"></textarea>
-    <input type="hidden" name="_next" value="https://biiotech.com.br/obrigado.html">
-    <button class="btn" type="submit">Enviar pedido de reunião</button>
-  </form>
+      <!-- Exemplo de form (troque action para o seu endpoint ou use formsubmit.co) -->
+      <form action="https://formsubmit.co/your-email@example.com" method="POST" style="display:grid;gap:10px">
+        <input name="name" placeholder="Seu nome" required style="padding:10px;border-radius:8px;border:1px solid #e6e9ef"/>
+        <input name="email" placeholder="Seu email" style="padding:10px;border-radius:8px;border:1px solid #e6e9ef"/>
+        <input name="phone" placeholder="Telefone (opcional)" style="padding:10px;border-radius:8px;border:1px solid #e6e9ef"/>
+        <select name="service" style="padding:10px;border-radius:8px;border:1px solid #e6e9ef">
+          <option>Diagnóstico gratuito</option>
+          <option>Agente IA</option>
+          <option>Dashboards Power BI</option>
+          <option>Automação / Integração</option>
+        </select>
+        <textarea name="message" placeholder="Mensagem / desafio" rows="4" style="padding:10px;border-radius:8px;border:1px solid #e6e9ef"></textarea>
+        <div style="display:flex;gap:12px">
+          <button class="btn" type="submit" style="border:none">Enviar</button>
+          <a class="cta" href="https://wa.me/5581997333025?text=Quero%20agendar%20um%20diagn%C3%B3stico" style="display:inline-block; text-align:center">Chamar no WhatsApp</a>
+        </div>
+      </form>
 
-  <p class="hint">Ou envie mensagem direta no WhatsApp: <a href="https://wa.me/5581997333025">+55 81 99733-3025</a></p>
+      <p class="small" style="margin-top:12px">Atendimento presencial ou online (agendar por WhatsApp). Para propostas públicas e contratações, consulte a Proposta Técnica. :contentReference[oaicite:24]{index=24}</p>
+    </div>
+  </section>
 </main>
 
-<footer>© 2025 Biiotech — Atendimento presencial e remoto • biiotechbr@gmail.com</footer>
+<footer class="footer">
+  <p>Biiotech • Atendimento presencial + remoto • WhatsApp: <a href="https://wa.me/5581997333025" style="color:#bfe9ff">+55 81 99733-3025</a></p>
+</footer>
 </body>
 </html>
