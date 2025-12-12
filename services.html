@@ -1,60 +1,68 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="pt-BR">
 <head>
-<meta charset="utf-8"/><meta name="viewport" content="width=device-width,initial-scale=1"/>
-<title>Serviços — Biiotech</title>
-<style>
- body{font-family:Inter,Arial,sans-serif;background:#f5f7fb;margin:0;color:#111}
- header{background:white;padding:12px 20px;border-bottom:1px solid #e6e9ef;display:flex;align-items:center;justify-content:space-between}
- .container{max-width:1100px;margin:28px auto;padding:18px}
- .service{display:flex;gap:18px;margin-bottom:26px;background:white;padding:18px;border-radius:10px;box-shadow:0 8px 24px rgba(16,24,60,0.06)}
- .service img{width:36%;border-radius:8px;object-fit:cover}
- .service h2{margin:0;color:#1A4D8F}
- .price{margin-top:8px;font-weight:800;color:#0b2b59}
- .btn{display:inline-block;margin-top:12px;background:#007bff;color:#fff;padding:10px 14px;border-radius:8px;text-decoration:none}
- footer{background:#0b1320;color:#fff;padding:20px;text-align:center}
-</style>
+  <meta charset="utf-8"/><meta name="viewport" content="width=device-width,initial-scale=1"/>
+  <title>Serviços — Biiotech</title>
+  <link rel="stylesheet" href="style.css"/>
+  <meta name="description" content="Serviços da Biiotech: Agente IA, Dashboards Power BI, Automação com Power Automate e consultoria técnica para prefeituras e PMEs.">
 </head>
 <body>
-<header>
-  <img src="imagens/Biiotech.jpeg" alt="Biiotech" style="height:52px"/>
-  <nav><a href="index.html" style="text-decoration:none;color:#333;font-weight:600">Início</a></nav>
+<header class="header">
+  <div class="navbar">
+    <a class="logo" href="index.html"><img src="imagens/Biiotech.jpeg" alt="Biiotech logo"/></a>
+    <nav><ul class="nav-links">
+      <li><a href="index.html">Início</a></li>
+      <li><a href="servicos.html">Serviços</a></li>
+      <li><a href="cases.html">Cases</a></li>
+      <li><a href="proposta.html">Proposta</a></li>
+      <li><a href="contato.html">Contato</a></li>
+    </ul></nav>
+  </div>
 </header>
 
 <main class="container">
-  <h1 style="color:#1A4D8F">Serviços</h1>
+  <section>
+    <h1>Serviços</h1>
+    <p class="small">Ofertas pensadas para gerar resultado rápido e escalar com templates replicáveis. (Base: Proposta Comercial Enxuta e Plano Detalhado). :contentReference[oaicite:14]{index=14} :contentReference[oaicite:15]{index=15}</p>
 
-  <div class="service">
-    <img src="imagens/images (3).jpg" alt="Agente IA">
-    <div>
-      <h2>Agente IA Sob Medida</h2>
-      <p>Assistente inteligente que automatiza tarefas repetitivas (atendimento, geração de relatórios, resumo de documentos). Integração via Power Automate, APIs e painel de acompanhamento.</p>
-      <div class="price">Setup R$ 2.490 • Manutenção R$ 249/mês (plano base)</div>
-      <a class="btn" href="https://wa.me/5581997333025?text=Quero%20o%20Agente%20IA">Contratar</a>
+    <div class="card" style="display:grid;grid-template-columns:260px 1fr;gap:18px;align-items:center">
+      <img src="imagens/TECH11.jpg" alt="Agente IA">
+      <div>
+        <div class="title">Agente IA Sob Medida</div>
+        <p class="small">Agentes que executam tarefas: responder clientes, resumir e-mails, gerar relatórios, monitorar prazos, alertas e integrações via Power Automate. MVP em 7 dias para validar impacto. :contentReference[oaicite:16]{index=16}</p>
+        <div class="price">Setup R$ 2.470 • Manutenção R$ 247/mês</div>
+        <a class="cta" href="https://wa.me/5581997333025?text=Quero%20o%20Agente%20IA%20-%20Biiotech">Quero contratar</a>
+      </div>
     </div>
-  </div>
 
-  <div class="service">
-    <img src="imagens/images (4).jpg" alt="Dashboards">
-    <div>
-      <h2>Dashboards Profissionais (Power BI)</h2>
-      <p>Modelagem, Data Warehouse simplificado, medidas DAX e dashboards interativos para gestão comercial, financeira e operacional.</p>
-      <div class="price">Projeto a partir de R$ 1.990 • Contrato mensal disponível (R$ 4.490/mês para escopo público). :contentReference[oaicite:6]{index=6}</div>
-      <a class="btn" href="proposta.html">Ver proposta técnica</a>
-    </div>
-  </div>
+    <div style="height:18px"></div>
 
-  <div class="service">
-    <img src="imagens/TECH120.jpeg" alt="Automação">
-    <div>
-      <h2>Automação & Integração</h2>
-      <p>Fluxos de dados, ETL, automações com Power Automate e pipelines que garantem refresh automático e redução de retrabalho.</p>
-      <div class="price">Consultoria sob medida — orçamentos a partir de R$ 1.190</div>
-      <a class="btn" href="https://wa.me/5581997333025">Solicitar orçamento</a>
+    <div class="card" style="display:grid;grid-template-columns:260px 1fr;gap:18px;align-items:center">
+      <img src="imagens/dashboard1.jpg" alt="Dashboards">
+      <div>
+        <div class="title">Dashboards Profissionais (Power BI)</div>
+        <p class="small">Modelagem, medidas DAX, ETL e entregáveis executivos. Painéis para financeiro, vendas e operações com roteiros de ação. Contratos públicos adaptáveis para dispensa/contratação. :contentReference[oaicite:17]{index=17}</p>
+        <div class="price">Projeto a partir de R$ 1.470 • Pacote público R$ 4.470/mês (suporte e evolução).</div>
+        <a class="cta" href="proposta.html">Ver proposta técnica</a>
+      </div>
     </div>
-  </div>
+
+    <div style="height:18px"></div>
+
+    <div class="card" style="display:grid;grid-template-columns:260px 1fr;gap:18px;align-items:center">
+      <img src="imagens/TECH7.jpeg" alt="Automação">
+      <div>
+        <div class="title">Automação & Integração</div>
+        <p class="small">Power Automate e pipelines que ligam ERP/Excel/SQL aos painéis e agentes — reduzindo tempo manual e entregando confiabilidade dos dados.</p>
+        <div class="price">Consultoria personalizada — orçamento sob medida.</div>
+        <a class="cta" href="contato.html">Solicitar orçamento</a>
+      </div>
+    </div>
+  </section>
 </main>
 
-<footer>© 2025 Biiotech — Soluções para o interior de Pernambuco • biiotechbr@gmail.com</footer>
+<footer class="footer">
+  <p>Serviços Biiotech • Entregas rápidas • Piloto em 15 dias • WhatsApp: <a href="https://wa.me/5581997333025" style="color:#bfe9ff">+55 81 99733-3025</a></p>
+</footer>
 </body>
 </html>
