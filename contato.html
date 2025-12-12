@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8"/><meta name="viewport" content="width=device-width,initial-scale=1"/>
+<title>Contato — Biiotech</title>
+<style>
+ body{font-family:Inter,Arial,sans-serif;background:#f4f6fb;margin:0;color:#111}
+ header{background:white;padding:12px 20px;border-bottom:1px solid #eee}
+ .wrap{max-width:900px;margin:28px auto;padding:18px}
+ form{background:white;padding:18px;border-radius:10px;box-shadow:0 8px 24px rgba(16,24,60,0.06)}
+ label{display:block;margin-top:10px;font-weight:600}
+ input,textarea,select{width:100%;padding:10px;margin-top:6px;border-radius:8px;border:1px solid #dfe6f2}
+ .btn{display:inline-block;margin-top:12px;background:#007bff;color:#fff;padding:10px 14px;border-radius:8px;text-decoration:none;border:none}
+ .hint{color:#555;margin-top:8px}
+ footer{background:#0b1320;color:#fff;padding:18px;text-align:center;margin-top:18px}
+</style>
+</head>
+<body>
+<header><img src="imagens/Biiotech.jpeg" alt="Biiotech" style="height:52px"/></header>
+
+<main class="wrap">
+  <h1 style="color:#1A4D8F">Contato</h1>
+  <p>Agende uma reunião presencial (sábados no interior: Toritama, Santa Cruz do Capibaribe, Vitória) ou uma call remota.</p>
+
+  <form action="https://formsubmit.co/your-email@example.com" method="POST">
+    <label>Nome</label><input name="name" required>
+    <label>Empresa / Prefeitura</label><input name="company">
+    <label>Segmento</label><select name="segment"><option>Varejo</option><option>Indústria</option><option>Prefeitura</option><option>Contabilidade</option></select>
+    <label>Mensagem / Desafio</label><textarea name="message" rows="5"></textarea>
+    <input type="hidden" name="_next" value="https://biiotech.com.br/obrigado.html">
+    <button class="btn" type="submit">Enviar pedido de reunião</button>
+  </form>
+
+  <p class="hint">Ou envie mensagem direta no WhatsApp: <a href="https://wa.me/5581997333025">+55 81 99733-3025</a></p>
+</main>
+
+<footer>© 2025 Biiotech — Atendimento Personalizado Presencial e Remoto • biiotechbr@gmail.com</footer>
+</body>
+</html>
