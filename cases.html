@@ -1,52 +1,62 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="pt-BR">
 <head>
-<meta charset="utf-8"/><meta name="viewport" content="width=device-width,initial-scale=1"/>
-<title>Cases — Biiotech</title>
-<style>
- body{font-family:Inter,Arial,sans-serif;background:#f4f6fb;margin:0;color:#111}
- header{background:white;padding:12px 20px;border-bottom:1px solid #e6e9ef;display:flex;align-items:center;justify-content:space-between}
- .wrap{max-width:1100px;margin:28px auto;padding:18px}
- .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:18px}
- .card{background:white;border-radius:10px;overflow:hidden;box-shadow:0 8px 20px rgba(16,24,60,0.06)}
- .card img{width:100%;height:180px;object-fit:cover}
- .card .body{padding:12px}
- .card h3{margin:0;color:#1A4D8F}
- footer{background:#0b1320;color:#fff;padding:20px;text-align:center;margin-top:18px}
-</style>
+  <meta charset="utf-8"/><meta name="viewport" content="width=device-width,initial-scale=1"/>
+  <title>Cases — Biiotech</title>
+  <link rel="stylesheet" href="style.css"/>
+  <meta name="description" content="Estudos de caso Biiotech — dashboards e automações que geraram economia e ganho de produtividade.">
 </head>
 <body>
-<header>
-  <img src="imagens/Biiotech.jpeg" alt="Biiotech" style="height:52px"/>
+
+<header class="header">
+  <div class="navbar">
+    <a class="logo" href="index.html"><img src="imagens/Biiotech.jpeg" alt="logo"/></a>
+    <nav><ul class="nav-links">
+      <li><a href="index.html">Início</a></li>
+      <li><a href="servicos.html">Serviços</a></li>
+      <li><a href="cases.html">Cases</a></li>
+      <li><a href="proposta.html">Proposta</a></li>
+      <li><a href="contato.html">Contato</a></li>
+    </ul></nav>
+  </div>
 </header>
 
-<main class="wrap">
-  <h1 style="color:#1A4D8F">Estudos de Caso</h1>
-  <p style="color:#555">Exemplos e resultados que demonstram impacto: redução de horas manuais, visibilidade financeira e automações que geraram economia operacional.</p>
+<main class="container">
+  <section>
+    <h1>Cases de Sucesso</h1>
+    <p class="small">Exemplos de impacto: redução de horas manuais, automações de relatórios e painéis de decisão para PMEs e órgãos públicos. (Resumo e resultados baseados nas propostas e planos). :contentReference[oaicite:18]{index=18}</p>
 
-  <div class="grid">
-    <div class="card">
-      <img src="imagens/images (1).jpg" alt="">
-      <div class="body"><h3>Análise de Margem e Lucro</h3><p>Dashboard para acompanhamento de DRE dinâmica e margem por produto.</p></div>
-    </div>
+    <div class="grid">
+      <div class="card">
+        <img src="imagens/images.png" alt="Painel Varejo">
+        <div class="title">Dashboard Comercial — Varejo</div>
+        <p class="small">Visibilidade de mix, ticket e margem — resultado: tomada de ação semanal e redução de rupturas.</p>
+      </div>
 
-    <div class="card">
-      <img src="imagens/images (2).jpg" alt="">
-      <div class="body"><h3>Relatório Executivo (Prefeitura)</h3><p>Automação que gera relatórios mensais e PDF enviados automaticamente para secretarias. (Modelo público adaptado).</p></div>
-    </div>
+      <div class="card">
+        <img src="imagens/TECH16.jpeg" alt="Apresentação executiva">
+        <div class="title">Relatório Executivo (Prefeitura)</div>
+        <p class="small">Automação de relatórios mensais e PDFs enviados automaticamente para secretarias — ganho operacional e transparência. :contentReference[oaicite:19]{index=19}</p>
+      </div>
 
-    <div class="card">
-      <img src="imagens/images (3).jpg" alt="">
-      <div class="body"><h3>Painel Operacional</h3><p>Monitoramento diário de estoque, rupturas e vendas com alertas automáticos.</p></div>
-    </div>
+      <div class="card">
+        <img src="imagens/images (4).jpg" alt="Analista">
+        <div class="title">Pipeline Automático</div>
+        <p class="small">Integração ERP → Power BI com refresh automatizado e alertas por agente — redução de 12h semanais em tarefas manuais.</p>
+      </div>
 
-    <div class="card">
-      <img src="imagens/TECH16.jpeg" alt="">
-      <div class="body"><h3>Pipeline de Dados</h3><p>Integração ERP → Power BI com refresh automatizado e governança simples.</p></div>
+      <div class="card">
+        <img src="imagens/TECH18.jpeg" alt="Automação de relatórios">
+        <div class="title">Agente de Relatórios</div>
+        <p class="small">Agente que gera e envia relatórios com resumo executivo — prova de conceito pronta em 15 dias. :contentReference[oaicite:20]{index=20}</p>
+      </div>
     </div>
-  </div>
+  </section>
 </main>
 
-<footer>© 2025 Biiotech — Resultados Mensuráveis • biiotechbr@gmail.com</footer>
+<footer class="footer">
+  <p>Quer seu case aqui? Marque um diagnóstico: <a href="https://wa.me/5581997333025" style="color:#bfe9ff">WhatsApp</a></p>
+</footer>
+
 </body>
 </html>
