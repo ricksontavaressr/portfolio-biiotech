@@ -1,50 +1,57 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="pt-BR">
 <head>
-<meta charset="utf-8"/><meta name="viewport" content="width=device-width,initial-scale=1"/>
-<title>Proposta Técnica — Biiotech</title>
-<style>
- body{font-family:Inter,Arial,sans-serif;background:#fff;margin:0;color:#111}
- header{background:#fafafa;padding:12px 20px;border-bottom:1px solid #eee;display:flex;align-items:center;justify-content:space-between}
- .wrap{max-width:900px;margin:28px auto;padding:18px}
- h1{color:#1A4D8F}
- .box{background:#f7f9fc;padding:16px;border-radius:8px;border:1px solid #e6eefc}
- .btn{display:inline-block;background:#007bff;color:#fff;padding:10px 14px;border-radius:8px;text-decoration:none;margin-top:8px}
- footer{background:#0b1320;color:#fff;padding:18px;text-align:center;margin-top:18px}
-</style>
+  <meta charset="utf-8"/><meta name="viewport" content="width=device-width,initial-scale=1"/>
+  <title>Proposta Técnica — Biiotech</title>
+  <link rel="stylesheet" href="style.css"/>
+  <meta name="description" content="Proposta técnica de prestação de serviços Biiotech — Agente IA, integração e painel Power BI.">
 </head>
 <body>
-<header>
-  <img src="imagens/Biiotech.jpeg" alt="Biiotech" style="height:52px"/>
-  <nav><a href="index.html" style="text-decoration:none;color:#333;font-weight:600">Início</a></nav>
+<header class="header">
+  <div class="navbar">
+    <a class="logo" href="index.html"><img src="imagens/Biiotech.jpeg" alt="logo"/></a>
+    <nav><ul class="nav-links">
+      <li><a href="index.html">Início</a></li>
+      <li><a href="servicos.html">Serviços</a></li>
+      <li><a href="cases.html">Cases</a></li>
+      <li><a href="proposta.html">Proposta</a></li>
+      <li><a href="contato.html">Contato</a></li>
+    </ul></nav>
+  </div>
 </header>
 
-<main class="wrap">
-  <h1>Proposta Técnica de Prestação de Serviços — Biiotech</h1>
+<main class="container">
+  <section>
+    <h1>Proposta Técnica de Prestação de Serviços</h1>
 
-  <div class="box">
-    <h2>Resumo Executivo</h2>
-    <p>Fornecemos serviços contínuos de BI e automação: modelagem de dados, conexão a bases (Excel, CSV, ERP), dashboards responsivos e automação de relatórios. Padrão de apoio ideal para prefeituras e PMEs com foco em transparência e eficiência. (Base: Proposta técnica). :contentReference[oaicite:7]{index=7}</p>
+    <div class="card">
+      <h2>Resumo Executivo</h2>
+      <p class="small">A Biiotech propõe a implantação de um Agente de IA personalizado, integração via Power Automate e um painel Power BI para acompanhamento — solução pronta para testes em 7 dias. Oferta inicial: setup R$ 1.500 + manutenção opcional. (Versão resumida da proposta técnica). :contentReference[oaicite:21]{index=21}</p>
 
-    <h3>Escopo</h3>
-    <ul>
-      <li>Levantamento e validação de indicadores</li>
-      <li>Modelagem de dados e Data Marts</li>
-      <li>Dashboards interativos (Power BI)</li>
-      <li>Automação de relatórios e envio automatizado (Power Automate)</li>
-    </ul>
+      <h3>Escopo</h3>
+      <ul class="small">
+        <li>Levantamento de requisitos e processos</li>
+        <li>Desenvolvimento do Agente (prompting, integrações)</li>
+        <li>Implementação de fluxo de automação, para geração e envio de relatórios</li>
+        <li>Dashboard Power BI com Indicadores (KPIs) chaves e treinamento</li>
+      </ul>
 
-    <h3>Entregas mensais</h3>
-    <p>Até 2 dashboards por mês, relatório técnico mensal e suporte remoto até 10h/mês. Valor referência para órgãos públicos: R$ 4.490/mês (pacote completo). :contentReference[oaicite:8]{index=8}</p>
+      <h3>Entregáveis e cronograma</h3>
+      <p class="small">Entrega do MVP do agente em até 15 dias úteis (após assinatura e primeiro pagamento). Entregas documentadas: playbook, credenciais e gravação de treinamento. :contentReference[oaicite:22]{index=22}</p>
 
-    <h3>Oferta rápida — Agente IA (MVP)</h3>
-    <p>Setup: R$ 1.490 • Manutenção opcional: R$ 247/mês. Entrega em até 15 dias. (Oferta comercial enxuta). :contentReference[oaicite:9]{index=9}</p>
+      <h3>Valores</h3>
+      <p class="small"><strong>Setup:</strong> R$ 2.470<br/><strong>Manutenção (opcional):</strong> R$ 247/mês<br/><strong>Projeto completo de Dashboard + suporte (público):</strong> R$ 4.500/mês (ex.: escopo para prefeitura).</p>
 
-    <a class="btn" href="contato.html">Solicitar proposta personalizada</a>
-    <a class="btn" href="https://wa.me/5581997333025" style="background:#25D366;margin-left:8px">Contratar / WhatsApp</a>
-  </div>
+      <div style="margin-top:12px">
+        <a class="cta" href="https://wa.me/5581997333025?text=Gostaria%20de%20receber%20a%20Proposta%20T%C3%A9cnica%20completa">Solicitar proposta completa</a>
+        <a class="secondary-cta" href="contato.html">Falar com Rickson</a>
+      </div>
+    </div>
+  </section>
 </main>
 
-<footer>© 2025 Biiotech — Proposta Adaptada a Partir dos Documentos do Projeto • biiotechbr@gmail.com</footer>
+<footer class="footer">
+  <p>Proposta gerada com base no material do cliente. Para versão PDF pronta para envio, solicite via WhatsApp. :contentReference[oaicite:23]{index=23}</p>
+</footer>
 </body>
 </html>
