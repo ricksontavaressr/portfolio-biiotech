@@ -1,49 +1,60 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-
 <head>
-    <meta charset="UTF-8">
-    <title>Serviços — Biiotech</title>
-    <link rel="stylesheet" href="style.css">
+<meta charset="utf-8"/><meta name="viewport" content="width=device-width,initial-scale=1"/>
+<title>Serviços — Biiotech</title>
+<style>
+ body{font-family:Inter,Arial,sans-serif;background:#f5f7fb;margin:0;color:#111}
+ header{background:white;padding:12px 20px;border-bottom:1px solid #e6e9ef;display:flex;align-items:center;justify-content:space-between}
+ .container{max-width:1100px;margin:28px auto;padding:18px}
+ .service{display:flex;gap:18px;margin-bottom:26px;background:white;padding:18px;border-radius:10px;box-shadow:0 8px 24px rgba(16,24,60,0.06)}
+ .service img{width:36%;border-radius:8px;object-fit:cover}
+ .service h2{margin:0;color:#1A4D8F}
+ .price{margin-top:8px;font-weight:800;color:#0b2b59}
+ .btn{display:inline-block;margin-top:12px;background:#007bff;color:#fff;padding:10px 14px;border-radius:8px;text-decoration:none}
+ footer{background:#0b1320;color:#fff;padding:20px;text-align:center}
+</style>
 </head>
-
 <body>
-
 <header>
-    <nav class="navbar">
-        <a href="index.html" class="logo">
-            <img src="imagens/Biiotech.png" alt="Biiotech">
-        </a>
-        <ul class="nav-links">
-            <li><a href="index.html">Início</a></li>
-            <li><a href="servicos.html">Serviços</a></li>
-            <li><a href="cases.html">Cases</a></li>
-            <li><a href="contato.html">Contato</a></li>
-        </ul>
-    </nav>
+  <img src="imagens/Biiotech.jpeg" alt="Biiotech" style="height:52px"/>
+  <nav><a href="index.html" style="text-decoration:none;color:#333;font-weight:600">Início</a></nav>
 </header>
 
-<section>
-    <h1>Serviços Biiotech</h1>
+<main class="container">
+  <h1 style="color:#1A4D8F">Serviços</h1>
 
-    <div class="card">
-        <img src="imagens/TECH11.jpg">
-        <h2>Agente IA Sob Medida</h2>
-        <p>Automação inteligente com IA + Power Automate.</p>
-        <a class="btn" href="https://wa.me/5581997333025">Contratar</a>
+  <div class="service">
+    <img src="imagens/images (3).jpg" alt="Agente IA">
+    <div>
+      <h2>Agente IA Sob Medida</h2>
+      <p>Assistente inteligente que automatiza tarefas repetitivas (atendimento, geração de relatórios, resumo de documentos). Integração via Power Automate, APIs e painel de acompanhamento.</p>
+      <div class="price">Setup R$ 2.490 • Manutenção R$ 249/mês (plano base)</div>
+      <a class="btn" href="https://wa.me/5581997333025?text=Quero%20o%20Agente%20IA">Contratar</a>
     </div>
+  </div>
 
-    <div class="card">
-        <img src="imagens/images (3).jpg">
-        <h2>Dashboards Profissionais (Power BI)</h2>
-        <p>Modelagem, indicadores e relatórios executivos.</p>
-        <a class="btn" href="proposta.html">Ver Proposta Técnica</a>
+  <div class="service">
+    <img src="imagens/images (4).jpg" alt="Dashboards">
+    <div>
+      <h2>Dashboards Profissionais (Power BI)</h2>
+      <p>Modelagem, Data Warehouse simplificado, medidas DAX e dashboards interativos para gestão comercial, financeira e operacional.</p>
+      <div class="price">Projeto a partir de R$ 1.990 • Contrato mensal disponível (R$ 4.490/mês para escopo público). :contentReference[oaicite:6]{index=6}</div>
+      <a class="btn" href="proposta.html">Ver proposta técnica</a>
     </div>
-</section>
+  </div>
 
-<footer>
-© 2025 Biiotech — Soluções Personalizadas • biiotechbr@gmail.com
-</footer>
+  <div class="service">
+    <img src="imagens/TECH120.jpeg" alt="Automação">
+    <div>
+      <h2>Automação & Integração</h2>
+      <p>Fluxos de dados, ETL, automações com Power Automate e pipelines que garantem refresh automático e redução de retrabalho.</p>
+      <div class="price">Consultoria sob medida — orçamentos a partir de R$ 1.190</div>
+      <a class="btn" href="https://wa.me/5581997333025">Solicitar orçamento</a>
+    </div>
+  </div>
+</main>
 
+<footer>© 2025 Biiotech — Soluções para o interior de Pernambuco • biiotechbr@gmail.com</footer>
 </body>
 </html>
