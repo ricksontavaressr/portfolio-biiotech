@@ -1,168 +1,85 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Biiotech - BI, Dashboards e Automação</title>
-
-    <style>
-        body {
-            margin: 0;
-            font-family: 'Segoe UI', sans-serif;
-            background: #f4f5f7;
-            color: #222;
-        }
-
-        header {
-            background: white;
-            padding: 15px 40px;
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-            box-shadow: 0 2px 8px rgba(0,0,0,0.08);
-            position: sticky;
-            top: 0;
-            z-index: 1000;
-        }
-
-        .logo-header {
-            height: 55px;
-        }
-
-        nav a {
-            margin-left: 25px;
-            text-decoration: none;
-            font-weight: 600;
-            color: #333;
-        }
-
-        nav a:hover {
-            color: #0056ff;
-        }
-
-        .hero-img {
-            background: url('imagens/TECH16.jpeg');
-            background-size: cover;
-            background-position: center;
-            height: 430px;
-            border-radius: 12px;
-            margin: 25px;
-            position: relative;
-        }
-
-        .hero-overlay {
-            position: absolute;
-            bottom: 35px;
-            left: 45px;
-            background: rgba(0,0,0,0.55);
-            padding: 35px;
-            border-radius: 10px;
-            color: white;
-            width: 45%;
-        }
-
-        .hero-overlay h1 {
-            font-size: 38px;
-            margin: 0;
-        }
-
-        .hero-overlay p {
-            margin-top: 12px;
-            font-size: 18px;
-        }
-
-        .cta-btn {
-            margin-top: 20px;
-            background: #007bff;
-            color: white;
-            padding: 14px 28px;
-            border-radius: 8px;
-            display: inline-block;
-            text-decoration: none;
-            font-weight: 600;
-        }
-
-        .section {
-            padding: 50px 40px;
-        }
-
-        .section h2 {
-            font-size: 32px;
-        }
-
-        .services-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-            gap: 25px;
-            margin-top: 30px;
-        }
-
-        .service-box {
-            background: white;
-            padding: 25px;
-            border-radius: 10px;
-            box-shadow: 0 3px 10px rgba(0,0,0,0.12);
-        }
-
-        footer {
-            margin-top: 40px;
-            background: #111;
-            color: white;
-            padding: 35px;
-            text-align: center;
-        }
-    </style>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Biiotech — IA & Automação Inteligente</title>
+  <style>
+    :root{--bg:#f4f6fb;--white:#fff;--blue:#1A4D8F;--accent:#007bff;--muted:#6b7280}
+    *{box-sizing:border-box}
+    body{margin:0;font-family:Inter,Segoe UI,Arial,sans-serif;background:var(--bg);color:#111}
+    header{background:var(--white);display:flex;align-items:center;justify-content:space-between;padding:14px 28px;border-bottom:1px solid #e6e9ef;position:sticky;top:0;z-index:20}
+    .logo{height:56px}
+    nav a{margin-left:20px;text-decoration:none;color:#333;font-weight:600}
+    .container{max-width:1100px;margin:28px auto;padding:0 20px}
+    .hero{background-image:url('imagens/TECH16.jpeg');background-size:cover;background-position:center;border-radius:12px;padding:48px;color:white;position:relative;overflow:hidden}
+    .hero .panel{background:rgba(0,0,0,0.5);padding:28px;border-radius:8px;max-width:640px}
+    h1{margin:0 0 12px 0;font-size:34px}
+    p.lead{margin:0 0 18px;color:#e6eefc;font-size:17px}
+    .cta{background:var(--accent);color:white;padding:12px 18px;border-radius:8px;text-decoration:none;font-weight:700}
+    .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:18px;margin-top:24px}
+    .card{background:var(--white);padding:18px;border-radius:10px;box-shadow:0 6px 18px rgba(20,34,70,0.06)}
+    .card h3{margin:0 0 8px 0;color:var(--blue)}
+    footer{background:#0b1320;color:#fff;padding:28px;text-align:center;margin-top:36px}
+    .whatsapp{display:inline-block;margin-top:12px;background:#25D366;color:#04211a;padding:10px 16px;border-radius:8px;text-decoration:none;font-weight:700}
+    @media(max-width:680px){.hero .panel{max-width:100%}}
+  </style>
 </head>
-
 <body>
-
-<header>
-    <img src="imagens/Biiotech.jpeg" class="logo-header" alt="Logo Biiotech">
+  <header>
+    <div style="display:flex;align-items:center;gap:18px">
+      <img src="imagens/Biiotech.jpeg" alt="Biiotech" class="logo" />
+      <div style="font-weight:700;color:var(--blue)">Biiotech</div>
+    </div>
 
     <nav>
-        <a href="index.html">Início</a>
-        <a href="sobre.html">Sobre</a>
-        <a href="services.html">Serviços</a>
-        <a href="cases.html">Estudos de Caso</a>
-        <a href="#contato">Contato</a>
+      <a href="index.html">Início</a>
+      <a href="sobre.html">Sobre</a>
+      <a href="services.html">Serviços</a>
+      <a href="cases.html">Cases</a>
+      <a href="proposta.html">Proposta</a>
+      <a href="contato.html">Contato</a>
     </nav>
-</header>
+  </header>
 
-<section class="hero-img">
-    <div class="hero-overlay">
-        <h1>Transformo Dados em Lucro e Decisões Inteligentes</h1>
-        <p>Dashboards, automações e insights estratégicos para varejo, indústria têxtil, atacado e serviços no interior de Pernambuco.</p>
+  <main class="container">
+    <section class="hero">
+      <div class="panel">
+        <h1>Transformamos dados e IA em eficiência e lucro para empresas e prefeituras</h1>
+        <p class="lead">Dashboards, agentes de IA e automações práticas — implantação rápida, ROI mensurável. Serviço presencial e remoto nacional.</p>
+        <a class="cta" href="https://wa.me/5581997333025" target="_blank">Agendar diagnóstico gratuito</a>
+        <a class="whatsapp" href="https://wa.me/5581997333025?text=Quero%20o%20Diagn%C3%B3stico%20Express">WhatsApp</a>
+      </div>
+    </section>
 
-        <a href="https://wa.me/5581997333025" target="_blank" class="cta-btn">
-            Agendar diagnóstico gratuito
-        </a>
-    </div>
-</section>
-
-<section class="section">
-    <h2>Como posso ajudar sua empresa</h2>
-
-    <div class="services-grid">
-        <div class="service-box">
-            <h3>Dashboards Profissionais</h3>
-            <p>Indicadores claros, visuais modernos e insights que reduzem erros e aceleram decisões.</p>
+    <section style="margin-top:28px">
+      <h2 style="margin-bottom:10px;color:#0b2b59">O que fazemos</h2>
+      <div class="grid">
+        <div class="card">
+          <h3>Agentes de IA sob medida</h3>
+          <p>Automação de atendimento, geração de relatórios e rotinas administrativas com agentes treinados no seu negócio — entrega em até 7 dias (modelos iniciais).</p>
         </div>
 
-        <div class="service-box">
-            <h3>Automação de Relatórios</h3>
-            <p>Eliminação de processos manuais e relatórios automáticos conectados ao seu ERP.</p>
+        <div class="card">
+          <h3>Dashboards e BI (Power BI)</h3>
+          <p>Modelagem, ETL e painéis que mostram lucro, margem, giro de estoque e indicadores operacionais para decisão imediata.</p>
         </div>
 
-        <div class="service-box">
-            <h3>Consultoria Mensal (BI)</h3>
-            <p>Suporte contínuo: ajustes, evoluções e criação de novas análises conforme necessidade.</p>
+        <div class="card">
+          <h3>Automação e integrações</h3>
+          <p>Power Automate, integrações API e fluxos que eliminam trabalho manual e reduzem erros operacionais.</p>
         </div>
-    </div>
-</section>
 
-<footer>
-    © 2025 Biiotech — Inteligência com propósito.
-</footer>
+        <div class="card">
+          <h3>Consultoria e contratos públicos</h3>
+          <p>Propostas técnicas e execução para empresas, prefeituras e órgãos públicos (escopo e valores preparados para dispensa/contratação).</p>
+        </div>
+      </div>
+    </section>
+  </main>
 
+  <footer>
+    © 2025 Biiotech • Consultoria em BI, IA e Automação • <a href="mailto:biiotechbr@gmail.com" style="color:#bfe9ff">biiotechbr@gmail.com</a>
+  </footer>
 </body>
 </html>
