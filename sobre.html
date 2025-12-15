@@ -1,63 +1,189 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-  <meta charset="utf-8"/><meta name="viewport" content="width=device-width,initial-scale=1"/>
-  <title>Sobre — Biiotech</title>
-  <link rel="stylesheet" href="style.css"/>
-  <meta name="description" content="Saiba quem é a Biiotech — missão, visão, equipe e como entregamos agentes de IA e dashboards com foco em ROI.">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sobre — Biiotech</title>
+
+    <style>
+        :root {
+            --azul-escuro: #1A4D8F;
+            --azul-medio: #2C6ECC;
+            --azul-claro: #E8F1FC;
+            --cinza-escuro: #1B1B1B;
+            --cinza-medio: #4A4A4A;
+            --cinza-claro: #F5F7FA;
+            --cta: #0057E7;
+            --fonte: "Inter", Arial, sans-serif;
+        }
+
+        body {
+            margin: 0;
+            background: var(--cinza-claro);
+            font-family: var(--fonte);
+            line-height: 1.6;
+            color: var(--cinza-escuro);
+        }
+
+        header {
+            background: var(--azul-escuro);
+            padding: 18px 40px;
+            color: white;
+            position: fixed;
+            top: 0;
+            width: 100%;
+            box-shadow: 0 2px 6px rgba(0,0,0,0.15);
+            z-index: 1000;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 22px;
+        }
+
+        nav {
+            margin-top: 6px;
+        }
+
+        nav a {
+            color: white;
+            margin-right: 20px;
+            text-decoration: none;
+            font-weight: 500;
+        }
+
+        nav a:hover {
+            text-decoration: underline;
+        }
+
+        .container {
+            width: 80%;
+            margin: 140px auto 50px auto;
+            background: white;
+            padding: 40px;
+            border-radius: 10px;
+            box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+        }
+
+        h2 {
+            color: var(--azul-escuro);
+            margin-top: 0;
+        }
+
+        h3 {
+            color: var(--azul-medio);
+        }
+
+        .foto-perfil {
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 6px solid var(--azul-claro);
+            display: block;
+            margin-bottom: 20px;
+        }
+
+        footer {
+            background: var(--azul-escuro);
+            color: white;
+            text-align: center;
+            padding: 25px;
+            margin-top: 50px;
+        }
+
+        @media (max-width: 900px) {
+            .container { width: 92%; }
+        }
+    </style>
 </head>
+
 <body>
 
-<header class="header">
-  <div class="navbar">
-    <a class="logo" href="index.html"><img src="imagens/Biiotech.jpeg" alt="Biiotech logo"/></a>
-    <nav><ul class="nav-links">
-      <li><a href="index.html">Início</a></li>
-      <li><a href="services.html">Serviços</a></li>
-      <li><a href="cases.html">Cases</a></li>
-      <li><a href="proposta.html">Proposta</a></li>
-      <li><a href="contato.html">Contato</a></li>
-    </ul></nav>
-  </div>
+<header>
+    <h1>Biiotech — Arquitetura de Decisão Orientada a Dados</h1>
+    <nav>
+        <a href="index.html">Início</a>
+        <a href="services.html">Como Atuamos</a>
+        <a href="sobre.html">Sobre</a>
+        <a href="contato.html">Contato</a>
+    </nav>
 </header>
 
-<main class="container">
-  <section class="card" style="display:grid;grid-template-columns:1fr 420px;gap:22px;align-items:center">
-    <div>
-      <h1>Sobre a Biiotech</h1>
-      <p class="lead">Somos especialistas em IA aplicada, automação e Business Intelligence. Nossa missão é transformar tarefas repetitivas em processos automáticos e transformar dados em decisões de negócio. Atuamos com entregas rápidas, pilotos validáveis e foco em ROI. </p>
+<div class="container">
 
-      <h3>Missão</h3>
-      <p class="small">Entregar soluções práticas que gerem economia de tempo, redução de erro e ganho de produtividade — desde microempresas até secretarias municipais.</p>
+    <img class="foto-perfil" src="https://via.placeholder.com/200" alt="Rickson Tavares">
 
-      <h3>Diferenciais</h3>
-      <ul class="small">
-        <li>Entrega de pilotos em 15 dias (Agente IA + painel).</li>
-        <li>Especialização em Power BI, Power Automate e integração com LLMs.</li>
-        <li>Foco em casos replicáveis para acelerar receita (modelo Monetização Express). :contentReference[oaicite:11]{index=11}</li>
-      </ul>
+    <h2>Quem está por trás da Biiotech</h2>
 
-      <a class="cta" href="contato.html">Marcar diagnóstico</a>
-    </div>
+    <p>
+        Meu nome é <strong>Rickson N. Tavares</strong>.
+        Antes de trabalhar com dados, trabalhei com <strong>decisão real</strong>.
+    </p>
 
-    <aside style="text-align:center">
-      <img src="imagens/TECH22.jpeg" alt="Visão tecnológica" style="width:100%; border-radius:12px; box-shadow:0 10px 30px rgba(11,20,40,0.06)"/>
-      <p class="small" style="margin-top:12px">Rickson N. Tavares — fundador. Experiência em BI, automação e implementação de agentes para empresas e órgãos públicos. </p>
-    </aside>
-  </section>
+    <p>
+        Atuei por mais de duas décadas como empreendedor, gestor e consultor em
+        varejo, indústria e operações comerciais. Tomei decisões de compra,
+        estoque, precificação, expansão e corte — com impacto direto no caixa.
+    </p>
 
-  <section style="margin-top:18px">
-    <div class="card">
-      <h2>Visão estratégica para 2026</h2>
-      <p class="small">Crescer por dois canais: (1) clientes públicos com contratos recorrentes; (2) PMEs com soluções sob medida e planos de manutenção. Roadmap e certificações recomendadas para escalar como AI Engineer / líder técnico. </p>
-    </div>
-  </section>
-</main>
+    <p>
+        Foi nesse contexto que percebi algo recorrente: empresas não quebram por
+        falta de dados, quebram por <strong>decidir com modelos que já não leem
+        corretamente o cenário</strong>.
+    </p>
 
-<footer class="footer">
-  <p>© Biiotech — IA & Automação Inteligente • contato: <a href="mailto:biiotechbr@gmail.com" style="color:#bfe9ff">biiotechbr@gmail.com</a></p>
+    <h3>Da experiência à arquitetura de decisão</h3>
+
+    <p>
+        A Biiotech nasce da convergência entre vivência prática de negócio e
+        análise estruturada de dados.
+    </p>
+
+    <p>
+        Não atuo como analista isolado, nem como consultor genérico.
+        Atuo como <strong>Arquiteto de Decisão Orientada a Dados</strong> —
+        estruturando critérios, leituras e modelos que apoiam quem decide sob
+        pressão.
+    </p>
+
+    <h3>Como penso o meu papel</h3>
+
+    <ul>
+        <li>Não substituo a experiência do decisor — eu a potencializo</li>
+        <li>Não julgo decisões passadas — estruturo decisões futuras</li>
+        <li>Não entrego relatórios — entrego clareza</li>
+    </ul>
+
+    <h3>Quando meu trabalho faz sentido</h3>
+
+    <p>
+        Meu trabalho é indicado para organizações onde:
+    </p>
+
+    <ul>
+        <li>o cenário mudou mais rápido que os modelos tradicionais</li>
+        <li>errar ficou caro demais</li>
+        <li>o histórico perdeu confiabilidade</li>
+        <li>decidir exige mais do que intuição</li>
+    </ul>
+
+    <h3>Visão</h3>
+
+    <p>
+        Em mercados cada vez mais restritivos, quem prospera não é quem
+        trabalha mais dados — é quem <strong>decide melhor</strong>.
+    </p>
+
+    <p>
+        A Biiotech existe para estruturar esse nível de decisão.
+    </p>
+
+</div>
+
+<footer>
+    © 2025 Biiotech — Arquitetura de Decisão Orientada a Dados
 </footer>
+
 </body>
 </html>
-
-
