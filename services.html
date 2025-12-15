@@ -1,75 +1,110 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-  <meta charset="utf-8"/><meta name="viewport" content="width=device-width,initial-scale=1"/>
-  <title>Serviços — Biiotech</title>
-  <link rel="stylesheet" href="style.css"/>
-  <meta name="description" content="Serviços da Biiotech: Agente IA, Dashboards Power BI, Automação com Power Automate e consultoria técnica para prefeituras e PMEs.">
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width,initial-scale=1"/>
+<title>Como Atuamos — Biiotech</title>
+
+<style>
+ body{font-family:Inter,Arial,sans-serif;background:#f5f7fb;margin:0;color:#111}
+ header{background:white;padding:12px 20px;border-bottom:1px solid #e6e9ef;display:flex;align-items:center;justify-content:space-between}
+ .container{max-width:1100px;margin:28px auto;padding:18px}
+ .service{display:flex;gap:18px;margin-bottom:26px;background:white;padding:18px;border-radius:10px;box-shadow:0 8px 24px rgba(16,24,60,0.06)}
+ .service img{width:36%;border-radius:8px;object-fit:cover}
+ .service h2{margin:0;color:#1A4D8F}
+ .btn{display:inline-block;margin-top:14px;background:#007bff;color:#fff;padding:10px 14px;border-radius:8px;text-decoration:none}
+ footer{background:#0b1320;color:#fff;padding:20px;text-align:center}
+</style>
 </head>
+
 <body>
-<header class="header">
-  <div class="navbar">
-    <a class="logo" href="index.html"><img src="imagens/Biiotech.jpeg" alt="Biiotech logo"/></a>
-    <nav><ul class="nav-links">
-      <li><a href="index.html">Início</a></li>
-      <li><a href="services.html">Serviços</a></li>
-      <li><a href="cases.html">Cases</a></li>
-      <li><a href="proposta.html">Proposta</a></li>
-      <li><a href="contato.html">Contato</a></li>
-    </ul></nav>
-  </div>
+
+<header>
+  <img src="imagens/Biiotech.jpeg" alt="Biiotech" style="height:52px"/>
+  <nav>
+    <a href="index.html" style="text-decoration:none;color:#333;font-weight:600">Início</a>
+  </nav>
 </header>
 
 <main class="container">
-  <section>
-    <h1>Serviços</h1>
-    <p class="small">Ofertas pensadas para gerar resultado rápido e escalar com templates replicáveis. (Base: Proposta Comercial Enxuta e Plano Detalhado). </p>
 
-    <div class="card" style="display:grid;grid-template-columns:260px 1fr;gap:18px;align-items:center">
-      <img src="imagens/TECH11.jpeg" alt="Agente IA">
-      <div>
-        <div class="title">Agente IA Sob Medida</div>
-        <p class="small">Agentes que executam tarefas: responder clientes, resumir e-mails, gerar relatórios, monitorar prazos, alertas e integrações via Power Automate. MVP em 7 dias para validar impacto. </p>
-        <div class="price">Setup R$ 2.470 • Manutenção R$ 247/mês</div>
-        <a class="cta" href="https://wa.me/5581997333025?text=Quero%20o%20Agente%20IA%20-%20Biiotech">Quero contratar</a>
-      </div>
+  <h1 style="color:#1A4D8F">Como Atuamos</h1>
+  <p style="max-width:820px;color:#444">
+    A Biiotech atua como <strong>Arquiteta de Decisão Orientada a Dados</strong>.
+    Nosso trabalho não começa por ferramentas, automações ou dashboards.
+    Começa por <strong>uma decisão crítica</strong>.
+  </p>
+
+  <!-- SERVIÇO 1 -->
+  <div class="service">
+    <img src="imagens/images (3).jpg" alt="Diagnóstico de Decisão">
+    <div>
+      <h2>Diagnóstico de Decisão em Ambiente de Incerteza</h2>
+      <p>
+        Analisamos como decisões estratégicas estão sendo tomadas hoje e onde os
+        modelos atuais perderam precisão frente à complexidade do cenário.
+      </p>
+      <p>
+        O foco não é apontar erros, mas identificar:
+      </p>
+      <ul style="color:#444">
+        <li>onde o sinal de mercado se perdeu</li>
+        <li>onde o risco aumentou sem ser percebido</li>
+        <li>onde decisões exigem outro nível de leitura</li>
+      </ul>
+      <a class="btn" href="contato.html">Solicitar conversa de diagnóstico</a>
     </div>
+  </div>
 
-    <div style="height:18px"></div>
-
-    <div class="card" style="display:grid;grid-template-columns:260px 1fr;gap:18px;align-items:center">
-      <img src="imagens/images3.jpg" alt="Dashboards">
-      <div>
-        <div class="title">Dashboards Profissionais (Power BI)</div>
-        <p class="small">Modelagem, medidas DAX, ETL e entregáveis executivos. Painéis para financeiro, vendas e operações com roteiros de ação. Contratos públicos adaptáveis para dispensa/contratação. </p>
-        <div class="price">Projeto a partir de R$ 1.470 • Pacote público R$ 4.470/mês (suporte e evolução).</div>
-        <a class="cta" href="proposta.html">Ver proposta técnica</a>
-      </div>
+  <!-- SERVIÇO 2 -->
+  <div class="service">
+    <img src="imagens/images (4).jpg" alt="Arquitetura de Decisão">
+    <div>
+      <h2>Arquitetura de Decisão Orientada a Dados</h2>
+      <p>
+        Após o diagnóstico, estruturamos o sistema que sustenta a decisão
+        executiva, conectando dados operacionais, contexto de mercado e critérios
+        objetivos.
+      </p>
+      <p>
+        A arquitetura pode envolver:
+      </p>
+      <ul style="color:#444">
+        <li>modelos analíticos e regras claras</li>
+        <li>simulações de cenários</li>
+        <li>indicadores que forçam decisão</li>
+        <li>alertas de impacto e risco</li>
+      </ul>
+      <p>
+        O resultado não é visualização — é <strong>decisão com mais segurança</strong>.
+      </p>
     </div>
+  </div>
 
-    <div style="height:18px"></div>
-
-    <div class="card" style="display:grid;grid-template-columns:260px 1fr;gap:18px;align-items:center">
-      <img src="imagens/TECH7.jpeg" alt="Automação">
-      <div>
-        <div class="title">Automação & Integração</div>
-        <p class="small">Automações e pipelines que ligam ERP/Excel/SQL aos painéis e agentes — reduzindo tempo manual e entregando confiabilidade dos dados.</p>
-        <div class="price">Consultoria personalizada — orçamento sob medida.</div>
-        <a class="cta" href="contato.html">Solicitar orçamento</a>
-      </div>
+  <!-- SERVIÇO 3 -->
+  <div class="service">
+    <img src="imagens/TECH120.jpeg" alt="Acompanhamento Estratégico">
+    <div>
+      <h2>Acompanhamento Estratégico da Decisão</h2>
+      <p>
+        Decisão não termina na entrega do modelo.
+      </p>
+      <p>
+        Acompanhamos o uso contínuo da arquitetura decisória para garantir
+        consistência, ajuste fino e adaptação quando o cenário muda.
+      </p>
+      <p>
+        Esse acompanhamento evita que a organização volte a decidir apenas por
+        sensação ou histórico desatualizado.
+      </p>
     </div>
-  </section>
+  </div>
+
 </main>
 
-<footer class="footer">
-  <p>Serviços Biiotech • Entregas rápidas • Piloto em 15 dias • WhatsApp: <a href="https://wa.me/5581997333025" style="color:#bfe9ff">+55 81 99733-3025</a></p>
+<footer>
+  © 2025 Biiotech — Arquitetura de Decisão Orientada a Dados
 </footer>
+
 </body>
 </html>
-
-
-
-
-
-
-
