@@ -1,98 +1,155 @@
 <!doctype html>
 <html lang="pt-BR">
 <head>
-  <meta charset="utf-8"/>
-  <meta name="viewport" content="width=device-width,initial-scale=1"/>
-  <title>Biiotech — Agentes de IA, BI e Automação</title>
-  <link rel="stylesheet" href="style.css"/>
-  <meta name="description" content="Biiotech cria agentes de IA e dashboards que reduzem trabalho manual e aceleram decisões. Entregas rápidas — piloto em 15 dias.">
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Biiotech — Arquitetura de Decisão Orientada a Dados</title>
+  <meta name="description" content="Ajudamos CEOs e diretores a estruturar decisões críticas com dados em cenários de alta incerteza. Não entregamos dashboards. Entregamos clareza decisória." />
+
+  <style>
+    :root{--accent:#0b5ed7;--muted:#6b7280;--card:#ffffff;--bg:#f6f8fb;--maxw:1100px}
+    *{box-sizing:border-box}
+    body{font-family:Inter, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial; margin:0; background:var(--bg); color:#0f1724; line-height:1.45}
+    .container{max-width:var(--maxw); margin:28px auto; padding:24px}
+    header{display:flex;align-items:center;justify-content:space-between;gap:16px}
+    .brand{display:flex;align-items:center;gap:12px}
+    .logo{width:52px;height:52px;border-radius:10px;background:linear-gradient(135deg,#072b66,#0b5ed7);display:flex;align-items:center;justify-content:center;color:#fff;font-weight:700}
+    h1{margin:0;font-size:20px}
+    p.lead{margin:6px 0 0;color:var(--muted)}
+    nav a{margin-left:18px;color:var(--muted);text-decoration:none;font-size:14px}
+    .hero{display:grid;grid-template-columns:1fr 360px;gap:24px;margin-top:28px}
+    .card{background:var(--card);border-radius:12px;padding:20px;box-shadow:0 6px 18px rgba(15,23,36,0.05)}
+    .cta-main{display:flex;flex-direction:column;gap:12px}
+    .actions{display:flex;gap:10px}
+    .btn{padding:10px 14px;border-radius:8px;border:0;cursor:pointer;font-weight:600}
+    .btn-primary{background:var(--accent);color:#fff}
+    .btn-ghost{background:transparent;border:1px solid #dbeafe;color:var(--accent)}
+    .features{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin-top:14px}
+    .feature{background:#fff;border-radius:10px;padding:12px;font-size:14px}
+    .section{margin-top:28px}
+    footer{margin-top:28px;text-align:center;color:var(--muted);font-size:13px;padding:20px}
+    @media(max-width:980px){.hero{grid-template-columns:1fr} .features{grid-template-columns:repeat(2,1fr)}}
+  </style>
 </head>
+
 <body>
+<div class="container">
 
-  <!-- HEADER PADRÃO -->
-  <header class="header">
-    <div class="navbar">
-      <a class="logo" href="index.html"><img src="imagens/Biiotech.jpeg" alt="Biiotech logo" /></a>
-
-      <nav>
-        <ul class="nav-links">
-          <li><a href="index.html">Início</a></li>
-          <li><a href="services.html">Serviços</a></li>
-          <li><a href="cases.html">Cases</a></li>
-          <li><a href="proposta.html">Proposta</a></li>
-          <li><a href="contato.html">Contato</a></li>
-        </ul>
-      </nav>
+<header>
+  <div class="brand">
+    <div class="logo">BT</div>
+    <div>
+      <h1>Biiotech</h1>
+      <p class="lead">Arquitetura de Decisão Orientada a Dados</p>
     </div>
-  </header>
+  </div>
+  <nav>
+    <a href="#como">Como atuamos</a>
+    <a href="#paraquem">Para quem</a>
+    <a href="#contato">Contato</a>
+  </nav>
+</header>
 
-  <main class="container">
-    <section class="hero" aria-label="Apresentação">
-      <div class="hero-left">
-        <div class="kicker">Biiotech — IA & Automação Inteligente</div>
+<section class="hero">
 
-        <h1>Transforme dados e tarefas rotineiras em decisões e tempo livre</h1>
+  <div class="card">
+    <div class="cta-main">
+      <h2 style="margin:0">Decidir bem deixou de ser intuição.<br>Passou a ser estrutura.</h2>
 
-        <p class="lead">
-          Entregamos agentes de IA, automações com Power Automate e dashboards Power BI.
-          MVP de agente em até 15 dias — oferta inicial: setup R$ 1.470 + manutenção opcional.
-        </p>
+      <p>
+        Em mercados pressionados, o problema não é falta de dados — é a
+        <strong>perda de clareza na decisão</strong>.
+      </p>
 
-        <a class="cta" href="https://wa.me/5581997333025" rel="noopener" target="_blank">Agendar diagnóstico grátis</a>
-        <a class="secondary-cta" href="proposta.html">Ver proposta técnica</a>
+      <p>
+        A Biiotech atua ao lado de CEOs e diretores estruturando decisões críticas
+        de compra, estoque, margem e alocação de recursos em cenários de alta
+        incerteza.
+      </p>
+
+      <p>
+        Não entregamos dashboards.<br>
+        <strong>Entregamos segurança decisória.</strong>
+      </p>
+
+      <div class="actions" style="margin-top:10px">
+        <a class="btn btn-primary" href="#contato">Solicitar conversa de diagnóstico</a>
+        <a class="btn btn-ghost" href="#como">Entender como funciona</a>
       </div>
+    </div>
 
-      <div class="hero-right" aria-hidden="true">
-        <img src="imagens/TECH16.jpeg" alt="Apresentação de dashboard e equipe" style="width:100%;max-width:520px;border-radius:12px;box-shadow:0 8px 24px rgba(0,0,0,0.08)"/>
+    <div class="section">
+      <h3>O cenário mudou</h3>
+      <div class="features">
+        <div class="feature">O histórico perdeu precisão</div>
+        <div class="feature">O erro ficou mais caro</div>
+        <div class="feature">A margem não absorve mais tentativas</div>
       </div>
-    </section>
+    </div>
+  </div>
 
-    <section style="margin-top:18px">
-      <h2 style="color:#0b2b59">Nossas ofertas rápidas</h2>
-      <div class="grid">
-        <div class="card">
-          <img src="imagens/TECH1.jpeg" alt="Agente IA">
-          <div class="title">Agente IA Sob Medida</div>
-          <div class="small">Automatiza atendimento, relatórios e avisos — entrega em até 15 dias; setup R$ 2.470.</div>
-          <div class="price">Setup R$ 2.470 • Manutenção R$ 247/mês</div>
-        </div>
+  <aside class="card" id="paraquem">
+    <h3>Para quem atuamos</h3>
+    <p>
+      Trabalhamos com organizações onde a decisão é cara e não pode mais ser
+      tomada apenas por experiência.
+    </p>
+    <ul style="color:var(--muted);font-size:14px">
+      <li>Redes de varejo estruturadas</li>
+      <li>Distribuidores e operações B2B</li>
+      <li>Empresas com alto capital imobilizado</li>
+      <li>Negócios pressionados por margem</li>
+    </ul>
 
-        <div class="card">
-          <img src="imagens/images3.jpg" alt="Dashboards">
-          <div class="title">Dashboards Profissionais (Power BI)</div>
-          <div class="small">Modelagem, indicadores e entregáveis práticos para decisão executiva.</div>
-          <div class="price">Projeto a partir de R$ 1.470 • Contrato mensal disponível.</div>
-        </div>
+    <p style="margin-top:10px;color:var(--muted)">
+      Falamos diretamente com CEOs, diretores e conselhos.
+    </p>
+  </aside>
 
-        <div class="card">
-          <img src="imagens/TECH7.jpeg" alt="Automação">
-          <div class="title">Automação & Integração</div>
-          <div class="small">Automações, integrações API e pipelines para reduzir retrabalho.</div>
-          <div class="price">Consultoria sob medida — orçamento a partir de R$ 1.170</div>
-        </div>
-      </div>
-    </section>
+</section>
 
-    <section style="margin-top:30px">
-      <div class="card" style="display:flex;gap:18px;align-items:center">
-        <img src="imagens/images2.jpg" alt="Equipe Biiotech" style="width:180px;height:120px;object-fit:cover;border-radius:10px">
-        <div>
-          <h3 style="margin-bottom:8px;color:#0b2b59">Prova e processo</h3>
-          <p class="small">Roteiro de diagnóstico de 15 minutos, proposta enxuta e entrega do piloto em 15 dias — fluxo pensado para validar o caso de uso com rapidez.</p>
-          <a class="cta" href="contato.html" style="margin-top:8px;display:inline-block">Marcar diagnóstico</a>
-        </div>
-      </div>
-    </section>
-  </main>
+<section class="section card" id="como">
+  <h2>Como atuamos</h2>
 
-  <footer class="footer">
-    <p>Biiotech • IA, Automação & BI — Atendimento presencial e remoto. WhatsApp: <a href="https://wa.me/5581997333025" style="color:#bfe9ff">+55 81 99733-3025</a></p>
-  </footer>
+  <p>
+    Cada projeto começa por <strong>uma decisão crítica</strong> — nunca por
+    ferramenta.
+  </p>
+
+  <ol style="color:var(--muted)">
+    <li><strong>Diagnóstico de decisão:</strong> onde o modelo atual perdeu sinal</li>
+    <li><strong>Arquitetura decisória:</strong> critérios, simulações e alertas</li>
+    <li><strong>Acompanhamento:</strong> consistência mesmo com mudança de cenário</li>
+  </ol>
+
+  <p>
+    Nosso papel é organizar o caos informacional para que o decisor
+    enxergue com clareza o que antes estava oculto.
+  </p>
+</section>
+
+<section class="section card" id="contato">
+  <h2>Próximo passo</h2>
+
+  <p>
+    Se você sente que decidir ficou mais difícil e que errar ficou mais caro,
+    uma conversa estruturada faz sentido.
+  </p>
+
+  <p>
+    Não é uma apresentação de BI.<br>
+    <strong>É uma conversa sobre decisões.</strong>
+  </p>
+
+  <a class="btn btn-primary" href="https://wa.me/5591999999999" target="_blank">
+    Solicitar conversa de diagnóstico
+  </a>
+</section>
+
+<footer>
+  © Biiotech — Arquitetura de Decisão Orientada a Dados
+</footer>
+
+</div>
 </body>
 </html>
-
-
-
-
-
-
