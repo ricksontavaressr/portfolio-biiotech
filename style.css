@@ -3,7 +3,7 @@
    style.css (global)
    ========================================================= */
 
-/* ---------- VARIÁVEIS ---------- */
+/* ---------- VARIABLES ---------- */
 :root{
   --bg:#f5f7fb;
   --card:#ffffff;
@@ -26,7 +26,7 @@
   padding:0;
 }
 
-html,body{
+html, body{
   height:100%;
 }
 
@@ -48,7 +48,7 @@ a:hover{
   opacity:0.9;
 }
 
-/* ---------- LAYOUT BASE ---------- */
+/* ---------- BASE LAYOUT ---------- */
 .container{
   max-width:var(--maxw);
   margin:36px auto;
@@ -76,14 +76,14 @@ a:hover{
   padding:14px 20px;
 }
 
-/* ---------- LOGO (CORRIGIDO) ---------- */
+/* ---------- LOGO ---------- */
 .logo img{
-  height:48px;      /* tamanho executivo ideal */
-  width:auto;       /* mantém proporção */
+  height:48px;
+  width:auto;
   display:block;
 }
 
-/* ---------- MENU DESKTOP ---------- */
+/* ---------- DESKTOP MENU ---------- */
 .nav-links{
   list-style:none;
   display:flex;
@@ -102,14 +102,13 @@ a:hover{
   background:var(--accent-soft);
 }
 
-/* LINK ATIVO */
 .nav-links a.active{
   border-bottom:2px solid var(--accent);
   padding-bottom:6px;
   font-weight:800;
 }
 
-/* ---------- MENU MOBILE ---------- */
+/* ---------- MOBILE MENU ---------- */
 .mobile-nav{
   display:none;
   gap:10px;
@@ -166,7 +165,7 @@ a:hover{
   margin-bottom:18px;
 }
 
-/* ---------- CTAs ---------- */
+/* ---------- CTA ---------- */
 .cta{
   display:inline-block;
   background:var(--accent);
@@ -174,16 +173,6 @@ a:hover{
   padding:12px 18px;
   border-radius:10px;
   font-weight:800;
-}
-
-.secondary-cta{
-  display:inline-block;
-  border:1px solid var(--accent);
-  color:var(--accent);
-  padding:10px 14px;
-  border-radius:10px;
-  margin-left:12px;
-  font-weight:700;
 }
 
 /* =========================================================
@@ -224,35 +213,6 @@ a:hover{
   color:var(--muted);
 }
 
-.kicker{
-  font-size:13px;
-  color:var(--muted);
-  margin-bottom:8px;
-}
-
-/* =========================================================
-   SECTIONS
-   ========================================================= */
-
-.section{
-  max-width:var(--maxw);
-  margin:50px auto;
-  padding:0 20px;
-}
-
-.section h2{
-  color:var(--accent);
-  font-size:28px;
-  margin-bottom:15px;
-}
-
-.section p{
-  font-size:17px;
-  color:var(--muted);
-  max-width:900px;
-  margin-bottom:15px;
-}
-
 /* =========================================================
    FOOTER
    ========================================================= */
@@ -271,12 +231,11 @@ a:hover{
 }
 
 /* =========================================================
-   RESPONSIVO
+   RESPONSIVE
    ========================================================= */
 
 @media(max-width:880px){
 
-  /* LOGO MOBILE */
   .logo img{
     height:42px;
   }
@@ -296,7 +255,6 @@ a:hover{
     text-align:center;
   }
 
-  /* menu */
   .nav-links{
     display:none;
   }
