@@ -3,224 +3,131 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
     <title>Biiotech — Sobre | Arquitetura de Decisão</title>
 
-    <style>
-        :root {
-            --azul-escuro: #1A4D8F;
-            --azul-medio: #2C6ECC;
-            --azul-claro: #E8F1FC;
-            --cinza-escuro: #1B1B1B;
-            --cinza-medio: #4A4A4A;
-            --cinza-claro: #F5F7FA;
-            --cta: #0057E7;
-            --fundo: #F5F7FA;
-            --fonte: "Inter", Arial, sans-serif;
-        }
-
-        body {
-            margin: 0;
-            background: var(--fundo);
-            font-family: var(--fonte);
-            line-height: 1.6;
-            color: var(--cinza-escuro);
-        }
-
-        header {
-            background: var(--azul-escuro);
-            padding: 18px 40px;
-            color: white;
-            position: fixed;
-            top: 0;
-            width: 100%;
-            box-shadow: 0 2px 6px rgba(0,0,0,0.15);
-            z-index: 1000;
-        }
-
-        header h1 {
-            margin: 0;
-            font-size: 20px;
-            font-weight: 600;
-        }
-
-        nav {
-            margin-top: 6px;
-        }
-
-        nav a {
-            color: white;
-            margin-right: 20px;
-            text-decoration: none;
-            font-weight: 500;
-        }
-
-        nav a:hover {
-            text-decoration: underline;
-        }
-
-        .hero {
-            margin-top: 110px;
-            padding: 50px;
-            background: var(--azul-claro);
-            border-radius: 8px;
-            width: 80%;
-            margin-left: auto;
-            margin-right: auto;
-            text-align: center;
-        }
-
-        .hero h2 {
-            font-size: 32px;
-            color: var(--azul-escuro);
-            margin-bottom: 15px;
-        }
-
-        .hero p {
-            font-size: 18px;
-            color: var(--cinza-medio);
-            max-width: 850px;
-            margin: 0 auto;
-        }
-
-        .section {
-            width: 80%;
-            margin: 50px auto;
-        }
-
-        .content {
-            display: flex;
-            gap: 40px;
-            align-items: center;
-        }
-
-        .content-text {
-            flex: 2;
-        }
-
-        .content-text p {
-            font-size: 17px;
-            color: var(--cinza-medio);
-            margin-bottom: 15px;
-        }
-
-        .content-img {
-            flex: 1;
-            text-align: center;
-        }
-
-        .content-img img {
-            width: 260px;
-            height: 260px;
-            object-fit: cover;
-            border-radius: 50%;
-            border: 6px solid white;
-            box-shadow: 0 4px 12px rgba(0,0,0,0.15);
-            background: #ddd;
-        }
-
-        footer {
-            background: var(--azul-escuro);
-            color: white;
-            text-align: center;
-            padding: 25px;
-            margin-top: 50px;
-        }
-
-        @media (max-width: 900px) {
-            .content {
-                flex-direction: column;
-                text-align: center;
-            }
-        }
-    </style>
+    <!-- CSS GLOBAL -->
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-<header>
-    <h1>Biiotech — Arquitetura de Decisão Orientada a Dados</h1>
-    <nav>
-        <a href="index.html">Início</a>
-        <a href="services.html">Como atuamos</a>
-        <a href="sobre.html" class="active">Sobre</a>
-        <a href="cases.html">Casos</a>
-        <a href="proposta.html">Modelo de atuação</a>
-        <a href="contato.html">Contato</a>
-    </nav>
+<!-- HEADER PADRÃO -->
+<header class="header">
+  <nav class="navbar">
+
+    <div class="logo">
+      <a href="index.html">
+        <img src="imagens/Biiotech.jpeg" alt="Biiotech — Arquitetura de Decisão Orientada a Dados">
+      </a>
+    </div>
+
+    <ul class="nav-links">
+      <li><a href="index.html">Início</a></li>
+      <li><a href="services.html">Como atuamos</a></li>
+      <li><a href="sobre.html" class="active">Sobre</a></li>
+      <li><a href="cases.html">Casos</a></li>
+      <li><a href="proposta.html">Modelo</a></li>
+      <li><a href="contato.html">Contato</a></li>
+    </ul>
+
+    <!-- MENU MOBILE -->
+    <div class="mobile-nav">
+      <a href="index.html">Início</a>
+      <a href="services.html">Atuação</a>
+      <a href="contato.html">Contato</a>
+    </div>
+
+  </nav>
 </header>
 
-<section class="hero">
-    <h2>Sobre a Biiotech</h2>
-    <p>
+<!-- CONTEÚDO PRINCIPAL -->
+<main class="container">
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="hero-left">
+      <h1>Sobre a Biiotech</h1>
+      <p class="lead">
         Arquitetura de decisão nasce quando experiência prática
-        encontra estrutura analítica em cenários onde errar ficou caro.
-    </p>
-</section>
+        encontra estrutura analítica
+        em cenários onde errar ficou caro.
+      </p>
+    </div>
+  </section>
 
-<section class="section">
-    <div class="content">
+  <!-- CONTEÚDO AUTORIDADE -->
+  <section class="section">
+    <div class="grid">
 
-        <div class="content-text">
-            <p>
-                A Biiotech foi construída a partir de uma vivência real em negócios,
-                operações e tomada de decisão sob pressão.
-                Antes de atuar com dados e sistemas,
-                estive diretamente envolvido com varejo,
-                indústria, distribuição e operações comerciais.
-            </p>
+      <!-- TEXTO -->
+      <div class="card" style="grid-column: span 2;">
+        <p class="small">
+          A Biiotech foi construída a partir de vivência real em negócios,
+          operações e tomada de decisão sob pressão.
+          Antes de atuar com dados, sistemas e arquitetura analítica,
+          estive diretamente envolvido com varejo,
+          indústria, distribuição e operações comerciais.
+        </p>
 
-            <p>
-                Ao longo de mais de duas décadas como empreendedor,
-                consultor e executivo de campo,
-                acompanhei de perto como decisões de compra,
-                estoque, preço e alocação de capital
-                impactam diretamente o caixa e a sustentabilidade das empresas.
-            </p>
+        <p class="small">
+          Ao longo de mais de duas décadas como empreendedor,
+          consultor e executivo de campo,
+          acompanhei de perto como decisões de compra,
+          estoque, precificação e alocação de capital
+          impactam diretamente o caixa
+          e a sustentabilidade das empresas.
+        </p>
 
-            <p>
-                Nos últimos anos, essa experiência foi complementada
-                por atuação profunda em análise de dados,
-                sistemas de informação e arquitetura analítica,
-                permitindo conectar o que os dados mostram
-                com o que o decisor realmente precisa enxergar.
-            </p>
+        <p class="small">
+          Nos últimos anos, essa experiência foi complementada
+          por atuação profunda em análise de dados,
+          sistemas de informação e engenharia analítica,
+          permitindo conectar o que os dados mostram
+          com o que o decisor realmente precisa enxergar.
+        </p>
 
-            <p>
-                Hoje, a Biiotech atua como
-                <strong>Arquiteta de Decisão Orientada a Dados</strong>,
-                organizando informação, reduzindo incerteza
-                e apoiando CEOs e diretores
-                a decidir com mais clareza em ambientes complexos.
-            </p>
-        </div>
+        <p class="small">
+          Hoje, a Biiotech atua como
+          <strong>Arquiteta de Decisão Orientada a Dados</strong>,
+          organizando informação,
+          reduzindo incerteza
+          e apoiando CEOs e diretores
+          a decidir com mais clareza
+          em ambientes complexos.
+        </p>
+      </div>
 
-        <div class="content-img">
-            <!-- FOTO PROFISSIONAL
-                 Use aqui sua foto (ex: Foto-Prof.jpeg)
-                 Fundo neutro, postura executiva
-            -->
-            <img src="Foto-Prof.jpeg" alt="Rickson Tavares">
-        </div>
+      <!-- FOTO -->
+      <div class="card" style="text-align:center;">
+        <img src="imagens/Foto-Prof.jpeg"
+             alt="Rickson Tavares — Biiotech"
+             style="max-width:260px; border-radius:50%; margin-bottom:12px;">
+        <p class="small">
+          Rickson Tavares<br>
+          Fundador — Biiotech
+        </p>
+      </div>
 
     </div>
-</section>
+  </section>
 
-<section class="section">
-    <p style="font-size:17px; color:var(--cinza-medio); max-width:900px;">
-        A atuação da Biiotech não substitui a experiência do decisor.
-        Ela a fortalece.
-        Nosso trabalho é estruturar o processo decisório
-        para que boas decisões continuem sendo boas
-        mesmo quando o cenário muda.
+  <!-- FECHAMENTO -->
+  <section class="section">
+    <p class="small">
+      A atuação da Biiotech não substitui a experiência do decisor.
+      Ela a fortalece.
+      Nosso trabalho é estruturar o processo decisório
+      para que boas decisões continuem sendo boas
+      mesmo quando o cenário muda.
     </p>
-</section>
+  </section>
 
-<footer>
-    © 2025 Biiotech — Arquitetura de Decisão Orientada a Dados
+</main>
+
+<!-- FOOTER -->
+<footer class="footer">
+  <p>© 2025 Biiotech — Arquitetura de Decisão Orientada a Dados</p>
 </footer>
 
 </body>
 </html>
-
-
