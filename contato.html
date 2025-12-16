@@ -3,197 +3,104 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
     <title>Biiotech — Contato | Conversa de Diagnóstico</title>
 
-    <style>
-        :root {
-            --azul-escuro: #1A4D8F;
-            --azul-medio: #2C6ECC;
-            --azul-claro: #E8F1FC;
-            --cinza-escuro: #1B1B1B;
-            --cinza-medio: #4A4A4A;
-            --cinza-claro: #F5F7FA;
-            --cta: #0057E7;
-            --fundo: #F5F7FA;
-            --fonte: "Inter", Arial, sans-serif;
-        }
-
-        body {
-            margin: 0;
-            background: var(--fundo);
-            font-family: var(--fonte);
-            line-height: 1.6;
-            color: var(--cinza-escuro);
-        }
-
-        header {
-            background: var(--azul-escuro);
-            padding: 18px 40px;
-            color: white;
-            position: fixed;
-            top: 0;
-            width: 100%;
-            box-shadow: 0 2px 6px rgba(0,0,0,0.15);
-            z-index: 1000;
-        }
-
-        header h1 {
-            margin: 0;
-            font-size: 20px;
-            font-weight: 600;
-        }
-
-        nav {
-            margin-top: 6px;
-        }
-
-        nav a {
-            color: white;
-            margin-right: 20px;
-            text-decoration: none;
-            font-weight: 500;
-        }
-
-        nav a:hover {
-            text-decoration: underline;
-        }
-
-        .hero {
-            margin-top: 110px;
-            padding: 50px;
-            background: var(--azul-claro);
-            border-radius: 8px;
-            width: 80%;
-            margin-left: auto;
-            margin-right: auto;
-            text-align: center;
-        }
-
-        .hero h2 {
-            font-size: 32px;
-            color: var(--azul-escuro);
-            margin-bottom: 15px;
-        }
-
-        .hero p {
-            font-size: 18px;
-            color: var(--cinza-medio);
-            max-width: 900px;
-            margin: 0 auto;
-        }
-
-        .section {
-            width: 80%;
-            margin: 50px auto;
-        }
-
-        .section p {
-            font-size: 17px;
-            color: var(--cinza-medio);
-            max-width: 900px;
-            margin-bottom: 15px;
-        }
-
-        .cta-box {
-            background: white;
-            padding: 30px;
-            border-radius: 8px;
-            box-shadow: 0 2px 8px rgba(0,0,0,0.08);
-            max-width: 700px;
-            margin: 40px auto;
-            text-align: center;
-        }
-
-        .btn-whatsapp {
-            background: var(--cta);
-            color: white;
-            padding: 14px 26px;
-            border-radius: 6px;
-            text-decoration: none;
-            font-size: 17px;
-            display: inline-block;
-            margin-top: 20px;
-            font-weight: 600;
-        }
-
-        .btn-whatsapp:hover {
-            background: #0047c2;
-        }
-
-        footer {
-            background: var(--azul-escuro);
-            color: white;
-            text-align: center;
-            padding: 25px;
-            margin-top: 50px;
-        }
-    </style>
+    <!-- CSS GLOBAL -->
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-<header>
-    <h1>Biiotech — Arquitetura de Decisão Orientada a Dados</h1>
-    <nav>
-        <a href="index.html">Início</a>
-        <a href="services.html">Como atuamos</a>
-        <a href="sobre.html">Sobre</a>
-        <a href="cases.html">Casos</a>
-        <a href="proposta.html">Modelo de atuação</a>
-        <a href="contato.html" class="active">Contato</a>
-    </nav>
+<!-- HEADER PADRÃO -->
+<header class="header">
+  <nav class="navbar">
+
+    <div class="logo">
+      <a href="index.html">
+        <img src="imagens/Biiotech.jpeg" alt="Biiotech — Arquitetura de Decisão Orientada a Dados">
+      </a>
+    </div>
+
+    <ul class="nav-links">
+      <li><a href="index.html">Início</a></li>
+      <li><a href="services.html">Como atuamos</a></li>
+      <li><a href="sobre.html">Sobre</a></li>
+      <li><a href="cases.html">Casos</a></li>
+      <li><a href="proposta.html">Modelo</a></li>
+      <li><a href="contato.html" class="active">Contato</a></li>
+    </ul>
+
+    <!-- MENU MOBILE -->
+    <div class="mobile-nav">
+      <a href="index.html">Início</a>
+      <a href="services.html">Atuação</a>
+      <a href="contato.html">Contato</a>
+    </div>
+
+  </nav>
 </header>
 
-<section class="hero">
-    <h2>Quando faz sentido conversar</h2>
-    <p>
-        Esta conversa é indicada para quem sente
+<!-- CONTEÚDO PRINCIPAL -->
+<main class="container">
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="hero-left">
+      <h1>Quando faz sentido conversar</h1>
+      <p class="lead">
+        Esta conversa é indicada para quem percebe
         que decidir ficou mais difícil,
         que o risco aumentou
-        ou que a experiência sozinha
+        ou que a experiência isolada
         já não responde com a mesma precisão.
-    </p>
-</section>
-
-<section class="section">
-    <p>
-        A conversa de diagnóstico não é uma apresentação de BI,
-        não envolve proposta imediata
-        e não tem caráter comercial.
-    </p>
-
-    <p>
-        É um espaço estruturado para compreender o contexto,
-        mapear pontos de incerteza
-        e avaliar se faz sentido
-        avançar para um trabalho mais aprofundado.
-    </p>
-
-    <p>
-        Caso não haja aderência,
-        a conversa termina ali,
-        sem qualquer compromisso.
-    </p>
-
-    <div class="cta-box">
-        <p>
-            Se esse é o seu momento,
-            o próximo passo é simples:
-        </p>
-
-        <a class="btn-whatsapp"
-           href="https://wa.me/5581997333025?text=Olá,%20quero%20agendar%20uma%20conversa%20de%20diagnóstico%20estratégico.">
-            Agendar conversa de diagnóstico
-        </a>
+      </p>
     </div>
-</section>
+  </section>
 
-<footer>
-    © 2025 Biiotech — Arquitetura de Decisão Orientada a Dados
+  <!-- TEXTO -->
+  <section class="section">
+    <p>
+      A conversa de diagnóstico não é uma apresentação de BI,
+      não envolve proposta imediata
+      e não tem caráter comercial.
+    </p>
+
+    <p>
+      É um espaço estruturado para compreender o contexto,
+      mapear pontos de incerteza
+      e avaliar, com calma,
+      se faz sentido avançar para um trabalho mais aprofundado.
+    </p>
+
+    <p>
+      Caso não haja aderência,
+      a conversa termina ali,
+      sem qualquer compromisso.
+    </p>
+  </section>
+
+  <!-- CTA -->
+  <section class="section">
+    <div class="card" style="text-align:center; max-width:700px; margin:0 auto;">
+      <p class="small">
+        Se esse é o seu momento,
+        o próximo passo é simples:
+      </p>
+
+      <a href="https://wa.me/5581997333025?text=Olá,%20quero%20agendar%20uma%20conversa%20de%20diagnóstico%20estratégico."
+         class="cta"
+         target="_blank">
+        Agendar conversa de diagnóstico
+      </a>
+    </div>
+  </section>
+
+</main>
+
+<!-- FOOTER -->
+<footer class="footer">
+  <p>© 2025 Biiotech — Arquitetura de Decisão Orientada a Dados</p>
 </footer>
 
 </body>
 </html>
-
-
