@@ -3,269 +3,128 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
     <title>Biiotech — Arquitetura de Decisão Orientada a Dados</title>
 
-    <style>
-        :root {
-            --azul-escuro: #1A4D8F;
-            --azul-medio: #2C6ECC;
-            --azul-claro: #E8F1FC;
-            --cinza-escuro: #1B1B1B;
-            --cinza-medio: #4A4A4A;
-            --cinza-claro: #F5F7FA;
-            --cta: #0057E7;
-            --fundo: #F5F7FA;
-            --fonte: "Inter", Arial, sans-serif;
-        }
-
-        body {
-            margin: 0;
-            background: var(--fundo);
-            font-family: var(--fonte);
-            line-height: 1.6;
-            color: var(--cinza-escuro);
-        }
-
-        header {
-            background: var(--azul-escuro);
-            padding: 18px 40px;
-            color: white;
-            position: fixed;
-            top: 0;
-            width: 100%;
-            box-shadow: 0 2px 6px rgba(0,0,0,0.15);
-            z-index: 1000;
-        }
-
-        header h1 {
-            margin: 0;
-            font-size: 20px;
-            font-weight: 600;
-        }
-
-        nav {
-            margin-top: 6px;
-        }
-
-        nav a {
-            color: white;
-            margin-right: 20px;
-            text-decoration: none;
-            font-weight: 500;
-        }
-
-        nav a:hover {
-            text-decoration: underline;
-        }
-
-        .hero {
-            margin-top: 110px;
-            display: flex;
-            justify-content: space-between;
-            padding: 50px;
-            background: var(--azul-claro);
-            align-items: center;
-            border-radius: 8px;
-            width: 80%;
-            margin-left: auto;
-            margin-right: auto;
-        }
-
-        .hero-text {
-            max-width: 55%;
-        }
-
-        .hero-text h2 {
-            font-size: 34px;
-            margin: 0 0 15px;
-            color: var(--azul-escuro);
-        }
-
-        .hero-text p {
-            font-size: 18px;
-            color: var(--cinza-medio);
-        }
-
-        .hero img {
-            width: 260px;
-            height: 260px;
-            object-fit: cover;
-            border-radius: 50%;
-            border: 6px solid white;
-            background: #ddd;
-        }
-
-        .btn-whatsapp {
-            background: var(--cta);
-            color: white;
-            padding: 14px 22px;
-            border-radius: 6px;
-            text-decoration: none;
-            font-size: 17px;
-            display: inline-block;
-            margin-top: 18px;
-            font-weight: 600;
-        }
-
-        .btn-whatsapp:hover {
-            background: #0047c2;
-        }
-
-        .section {
-            width: 80%;
-            margin: 50px auto;
-        }
-
-        .section h2 {
-            color: var(--azul-escuro);
-            margin-bottom: 15px;
-            font-size: 28px;
-        }
-
-        .cards {
-            display: flex;
-            gap: 20px;
-        }
-
-        .card {
-            background: white;
-            padding: 22px;
-            border-radius: 8px;
-            flex: 1;
-            box-shadow: 0 2px 8px rgba(0,0,0,0.08);
-        }
-
-        footer {
-            background: var(--azul-escuro);
-            color: white;
-            text-align: center;
-            padding: 25px;
-            margin-top: 50px;
-        }
-
-        @media (max-width: 900px) {
-            .hero { flex-direction: column; text-align: center; }
-            .hero-text { max-width: 100%; }
-            .cards { flex-direction: column; }
-            .hero img { margin-top: 20px; }
-        }
-    </style>
+    <!-- CSS GLOBAL -->
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-<header>
-    <h1>Biiotech — Arquitetura de Decisão Orientada a Dados</h1>
-    <nav>
-        <a href="index.html" class="active">Início</a>
-        <a href="services.html">Como atuamos</a>
-        <a href="sobre.html">Sobre</a>
-        <a href="cases.html">Casos</a>
-        <a href="proposta.html">Modelo de atuação</a>
-        <a href="contato.html">Contato</a>
-    </nav>
+<!-- HEADER PADRÃO -->
+<header class="header">
+  <nav class="navbar">
+
+    <div class="logo">
+      <a href="index.html">
+        <img src="imagens/Biiotech.jpeg" alt="Biiotech — Arquitetura de Decisão Orientada a Dados">
+      </a>
+    </div>
+
+    <ul class="nav-links">
+      <li><a href="index.html" class="active">Início</a></li>
+      <li><a href="services.html">Como atuamos</a></li>
+      <li><a href="sobre.html">Sobre</a></li>
+      <li><a href="cases.html">Casos</a></li>
+      <li><a href="proposta.html">Modelo</a></li>
+      <li><a href="contato.html">Contato</a></li>
+    </ul>
+
+    <!-- MENU MOBILE -->
+    <div class="mobile-nav">
+      <a href="index.html">Início</a>
+      <a href="services.html">Atuação</a>
+      <a href="contato.html">Contato</a>
+    </div>
+
+  </nav>
 </header>
 
-<section class="hero">
-    <div class="hero-text">
-        <h2>Decidir bem deixou de ser intuição.<br>Passou a ser estrutura.</h2>
-        <p>
-            Em mercados cada vez mais pressionados, a diferença entre preservar margem ou perder caixa
-            está na qualidade da decisão — não na quantidade de dados.
-        </p>
-        <p>
-            A Biiotech atua como <strong>Arquiteta de Decisão Orientada a Dados</strong>,
-            apoiando CEOs e diretores a decidir com clareza mesmo em cenários de alta incerteza.
-        </p>
+<!-- CONTEÚDO PRINCIPAL -->
+<main class="container">
 
-        <a class="btn-whatsapp"
-           href="https://wa.me/5581997333025?text=Olá,%20quero%20conversar%20sobre%20decisão%20estratégica%20baseada%20em%20dados.">
-            Solicitar conversa de diagnóstico
-        </a>
+  <!-- HERO -->
+  <section class="hero">
+    <div class="hero-left">
+      <h1>Decidir bem deixou de ser intuição.<br>Passou a ser estrutura.</h1>
+      <p class="lead">
+        A Biiotech atua como arquiteta de decisões orientadas a dados,
+        apoiando líderes e empresas a reduzir incerteza,
+        organizar critérios e decidir com mais clareza
+        em ambientes complexos.
+      </p>
+
+      <a href="contato.html" class="cta">Agendar conversa estratégica</a>
+      <a href="services.html" class="secondary-cta">Entender como atuamos</a>
     </div>
 
-    <img src="Foto-Prof.jpeg" alt="Rickson Tavares">
-</section>
-
-<section class="section" id="como-atuamos">
-    <h2>Como atuamos</h2>
-    <div class="cards">
-        <div class="card">
-            <h3>Diagnóstico de decisão</h3>
-            <p>
-                Avaliamos como as decisões críticas estão sendo tomadas hoje e
-                onde os modelos atuais perderam precisão frente ao novo cenário.
-            </p>
-        </div>
-
-        <div class="card">
-            <h3>Arquitetura decisória</h3>
-            <p>
-                Estruturamos critérios, modelos e simulações que sustentam
-                decisões executivas com clareza e previsibilidade.
-            </p>
-        </div>
-
-        <div class="card">
-            <h3>Acompanhamento estratégico</h3>
-            <p>
-                Apoiamos a tomada de decisão de forma contínua,
-                garantindo consistência mesmo quando o cenário muda.
-            </p>
-        </div>
+    <div class="hero-right">
+      <img src="imagens/Foto-Prof.jpeg" alt="Rickson Tavares — Biiotech" style="max-width:280px;border-radius:12px;">
     </div>
-</section>
+  </section>
 
-<section class="section" id="decisoes">
-    <h2>Decisões que ajudamos a estruturar</h2>
-    <div class="cards">
-        <div class="card">
-            <h3>Compra e estoque</h3>
-            <p>
-                Onde alocar capital, o que priorizar e o que interromper
-                em ambientes de demanda volátil e margem pressionada.
-            </p>
-        </div>
-
-        <div class="card">
-            <h3>Margem e rentabilidade</h3>
-            <p>
-                Identificação de margens ilusórias, custos ocultos
-                e decisões que drenam caixa sem percepção imediata.
-            </p>
-        </div>
-
-        <div class="card">
-            <h3>Risco operacional</h3>
-            <p>
-                Antecipação de impactos e organização de sinais
-                antes que o erro se materialize financeiramente.
-            </p>
-        </div>
-    </div>
-</section>
-
-<section class="section" id="contato">
-    <h2>Quando faz sentido conversar</h2>
+  <!-- O QUE FAZEMOS -->
+  <section class="section">
+    <h2>O que fazemos</h2>
     <p>
-        Se decidir ficou mais difícil, se o erro ficou mais caro
-        ou se a experiência já não responde sozinha,
-        uma conversa estruturada faz sentido.
+      Não começamos por ferramentas, dashboards ou automações.
+      Começamos pela decisão que precisa ser tomada
+      e pelos riscos associados a errar.
     </p>
+    <p>
+      Organizamos dados, sinais e critérios
+      para que decisões estratégicas
+      sejam tomadas com mais previsibilidade e menos improviso.
+    </p>
+  </section>
 
-    <a class="btn-whatsapp"
-       href="https://wa.me/5581997333025?text=Olá,%20quero%20agendar%20uma%20conversa%20de%20diagnóstico%20estratégico.">
-        Agendar conversa de diagnóstico
-    </a>
-</section>
+  <!-- DECISÕES -->
+  <section class="grid">
 
-<footer>
-    © 2025 Biiotech — Arquitetura de Decisão Orientada a Dados
+    <div class="card">
+      <p class="kicker">Estratégia</p>
+      <h3 class="title">Decisões de crescimento</h3>
+      <p class="small">
+        Onde investir, o que priorizar,
+        quando expandir e quando proteger caixa.
+      </p>
+    </div>
+
+    <div class="card">
+      <p class="kicker">Operação</p>
+      <h3 class="title">Decisões operacionais críticas</h3>
+      <p class="small">
+        Estoque, compras, mix de produtos,
+        alocação de esforço e capacidade.
+      </p>
+    </div>
+
+    <div class="card">
+      <p class="kicker">Financeiro</p>
+      <h3 class="title">Decisões de rentabilidade</h3>
+      <p class="small">
+        Margem real, fluxo de caixa,
+        contratos sustentáveis e risco oculto.
+      </p>
+    </div>
+
+  </section>
+
+  <!-- FECHAMENTO -->
+  <section class="section">
+    <p class="small">
+      A Biiotech não substitui o decisor.
+      Estrutura o ambiente para que boas decisões
+      sejam mais prováveis — mesmo quando o cenário muda.
+    </p>
+  </section>
+
+</main>
+
+<!-- FOOTER -->
+<footer class="footer">
+  <p>© 2025 Biiotech — Arquitetura de Decisão Orientada a Dados</p>
 </footer>
 
 </body>
 </html>
-
-
-
