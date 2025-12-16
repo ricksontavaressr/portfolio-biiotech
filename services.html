@@ -3,260 +3,157 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
     <title>Biiotech — Como Atuamos | Arquitetura de Decisão</title>
 
-    <style>
-        :root {
-            --azul-escuro: #1A4D8F;
-            --azul-medio: #2C6ECC;
-            --azul-claro: #E8F1FC;
-            --cinza-escuro: #1B1B1B;
-            --cinza-medio: #4A4A4A;
-            --cinza-claro: #F5F7FA;
-            --cta: #0057E7;
-            --fundo: #F5F7FA;
-            --fonte: "Inter", Arial, sans-serif;
-        }
-
-        body {
-            margin: 0;
-            background: var(--fundo);
-            font-family: var(--fonte);
-            line-height: 1.6;
-            color: var(--cinza-escuro);
-        }
-
-        header {
-            background: var(--azul-escuro);
-            padding: 18px 40px;
-            color: white;
-            position: fixed;
-            top: 0;
-            width: 100%;
-            box-shadow: 0 2px 6px rgba(0,0,0,0.15);
-            z-index: 1000;
-        }
-
-        header h1 {
-            margin: 0;
-            font-size: 20px;
-            font-weight: 600;
-        }
-
-        nav {
-            margin-top: 6px;
-        }
-
-        nav a {
-            color: white;
-            margin-right: 20px;
-            text-decoration: none;
-            font-weight: 500;
-        }
-
-        nav a:hover {
-            text-decoration: underline;
-        }
-
-        .hero {
-            margin-top: 110px;
-            padding: 50px;
-            background: var(--azul-claro);
-            border-radius: 8px;
-            width: 80%;
-            margin-left: auto;
-            margin-right: auto;
-            text-align: center;
-        }
-
-        .hero h2 {
-            font-size: 32px;
-            color: var(--azul-escuro);
-            margin-bottom: 15px;
-        }
-
-        .hero p {
-            font-size: 18px;
-            color: var(--cinza-medio);
-            max-width: 800px;
-            margin: 0 auto;
-        }
-
-        .section {
-            width: 80%;
-            margin: 50px auto;
-        }
-
-        .section h2 {
-            color: var(--azul-escuro);
-            margin-bottom: 15px;
-            font-size: 28px;
-        }
-
-        .intro {
-            font-size: 17px;
-            color: var(--cinza-medio);
-            max-width: 900px;
-        }
-
-        .image-wrapper {
-            margin: 35px 0;
-            text-align: center;
-        }
-
-        .image-wrapper img {
-            max-width: 100%;
-            border-radius: 8px;
-            box-shadow: 0 4px 12px rgba(0,0,0,0.12);
-        }
-
-        .cards {
-            display: flex;
-            gap: 20px;
-            margin-top: 30px;
-        }
-
-        .card {
-            background: white;
-            padding: 25px;
-            border-radius: 8px;
-            flex: 1;
-            box-shadow: 0 2px 8px rgba(0,0,0,0.08);
-        }
-
-        .card h3 {
-            color: var(--azul-escuro);
-            margin-bottom: 10px;
-        }
-
-        footer {
-            background: var(--azul-escuro);
-            color: white;
-            text-align: center;
-            padding: 25px;
-            margin-top: 50px;
-        }
-
-        @media (max-width: 900px) {
-            .cards {
-                flex-direction: column;
-            }
-        }
-    </style>
+    <!-- CSS GLOBAL -->
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-<header>
-    <h1>Biiotech — Arquitetura de Decisão Orientada a Dados</h1>
-    <nav>
-        <a href="index.html">Início</a>
-        <a href="services.html" class="active">Como atuamos</a>
-        <a href="sobre.html">Sobre</a>
-        <a href="cases.html">Casos</a>
-        <a href="proposta.html">Modelo de atuação</a>
-        <a href="contato.html">Contato</a>
-    </nav>
+<!-- HEADER PADRÃO -->
+<header class="header">
+  <nav class="navbar">
 
+    <div class="logo">
+      <a href="index.html">
+        <img src="imagens/Biiotech.jpeg" alt="Biiotech — Arquitetura de Decisão Orientada a Dados">
+      </a>
+    </div>
+
+    <ul class="nav-links">
+      <li><a href="index.html">Início</a></li>
+      <li><a href="services.html" class="active">Como atuamos</a></li>
+      <li><a href="sobre.html">Sobre</a></li>
+      <li><a href="cases.html">Casos</a></li>
+      <li><a href="proposta.html">Modelo</a></li>
+      <li><a href="contato.html">Contato</a></li>
+    </ul>
+
+    <!-- MENU MOBILE -->
+    <div class="mobile-nav">
+      <a href="index.html">Início</a>
+      <a href="cases.html">Casos</a>
+      <a href="contato.html">Contato</a>
+    </div>
+
+  </nav>
 </header>
 
-<section class="hero">
-    <h2>Como atuamos</h2>
+<!-- CONTEÚDO PRINCIPAL -->
+<main class="container">
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="hero-left">
+      <h1>Como atuamos</h1>
+      <p class="lead">
+        Nosso trabalho não começa por ferramentas,
+        relatórios ou tecnologia.
+        Começa por uma decisão crítica
+        que precisa ser tomada com mais clareza,
+        menos risco e mais previsibilidade.
+      </p>
+    </div>
+  </section>
+
+  <!-- INTRO -->
+  <section class="section">
     <p>
-        Não começamos por ferramentas, relatórios ou tecnologia.
-        Nosso trabalho começa sempre por uma decisão crítica
-        que precisa ser tomada com mais clareza, precisão e segurança.
-    </p>
-</section>
-
-<section class="section">
-    <p class="intro">
-        Em um ambiente onde o histórico perdeu confiabilidade e a complexidade aumentou,
-        decisões baseadas apenas em experiência ou intuição passaram a carregar risco excessivo.
+      Em ambientes onde a complexidade aumentou
+      e o histórico perdeu confiabilidade,
+      decisões baseadas apenas em experiência ou intuição
+      passaram a carregar risco excessivo.
     </p>
 
-    <p class="intro">
-        A Biiotech atua como uma camada estratégica entre os dados operacionais
-        e a decisão executiva, organizando sinais, reduzindo incerteza
-        e estruturando critérios objetivos para decidir melhor.
+    <p>
+      A Biiotech atua como uma camada estratégica
+      entre os dados operacionais e a decisão executiva,
+      organizando critérios, sinais e cenários
+      para apoiar decisões mais consistentes.
     </p>
+  </section>
 
-    <!-- IMAGEM ÚNICA DA PÁGINA
-         Use aqui uma imagem discreta de:
-         - executivos analisando dados em reunião
-         - ambiente corporativo real
-         - sem estética futurista exagerada
-    -->
-    <div class="image-wrapper">
-        <img src="imagens/images4.jpg" alt="Decisão estratégica baseada em dados">
+  <!-- ETAPAS -->
+  <section class="grid">
+
+    <div class="card">
+      <p class="kicker">Etapa 1</p>
+      <h3 class="title">Diagnóstico da decisão</h3>
+      <p class="small">
+        Identificamos quais decisões realmente importam,
+        como estão sendo tomadas hoje
+        e onde os critérios atuais deixaram de acompanhar o cenário.
+      </p>
+      <p class="small">
+        O foco não é apontar falhas,
+        mas revelar onde a complexidade superou o modelo decisório existente.
+      </p>
     </div>
-</section>
 
-<section class="section">
-    <h2>Nossa atuação se estrutura em três etapas</h2>
-
-    <div class="cards">
-        <div class="card">
-            <h3>1. Diagnóstico de decisão</h3>
-            <p>
-                Avaliamos como decisões estratégicas estão sendo tomadas hoje
-                e onde os modelos atuais perderam precisão frente ao novo cenário.
-            </p>
-            <p>
-                O foco não é apontar falhas, mas identificar
-                onde a complexidade superou os critérios existentes.
-            </p>
-        </div>
-
-        <div class="card">
-            <h3>2. Arquitetura decisória</h3>
-            <p>
-                Estruturamos critérios claros, modelos analíticos e simulações
-                que sustentam decisões executivas com previsibilidade.
-            </p>
-            <p>
-                O objetivo é reduzir incerteza antes que o impacto financeiro aconteça.
-            </p>
-        </div>
-
-        <div class="card">
-            <h3>3. Acompanhamento estratégico</h3>
-            <p>
-                Apoiamos o uso contínuo do modelo decisório,
-                garantindo consistência mesmo quando o ambiente muda.
-            </p>
-            <p>
-                Decidir bem não é evento pontual. É processo contínuo.
-            </p>
-        </div>
+    <div class="card">
+      <p class="kicker">Etapa 2</p>
+      <h3 class="title">Arquitetura decisória</h3>
+      <p class="small">
+        Estruturamos critérios objetivos,
+        modelos analíticos e simulações
+        que sustentam decisões estratégicas
+        antes que o impacto financeiro aconteça.
+      </p>
+      <p class="small">
+        A decisão deixa de ser reativa
+        e passa a ser antecipatória.
+      </p>
     </div>
-</section>
 
-<section class="section">
-    <h2>O que NÃO fazemos</h2>
-    <p class="intro">
-        Para evitar ruído e desalinhamento, é importante deixar claro:
+    <div class="card">
+      <p class="kicker">Etapa 3</p>
+      <h3 class="title">Acompanhamento estratégico</h3>
+      <p class="small">
+        Apoiamos o uso contínuo do modelo decisório,
+        garantindo consistência mesmo quando o ambiente muda.
+      </p>
+      <p class="small">
+        Decidir bem não é evento pontual.
+        É um processo contínuo.
+      </p>
+    </div>
+
+  </section>
+
+  <!-- O QUE NÃO FAZEMOS -->
+  <section class="section">
+    <h2>O que não fazemos</h2>
+
+    <p>
+      Para manter alinhamento e evitar ruído,
+      é importante deixar claro:
     </p>
 
-    <p class="intro">
-        Não vendemos dashboards genéricos, não atuamos por hora,
-        não prometemos crescimento artificial
-        e não substituímos a experiência do decisor.
+    <p>
+      Não vendemos dashboards genéricos,
+      não atuamos por hora,
+      não prometemos crescimento artificial
+      e não substituímos a experiência do decisor.
     </p>
 
-    <p class="intro">
-        Nosso papel é estruturar decisões melhores em ambientes
-        onde errar ficou caro demais.
+    <p>
+      Nosso papel é estruturar decisões melhores
+      em contextos onde errar ficou caro demais.
     </p>
-</section>
+  </section>
 
-<footer>
-    © 2025 Biiotech — Arquitetura de Decisão Orientada a Dados
+  <!-- CTA -->
+  <section class="section">
+    <a href="contato.html" class="cta">Agendar conversa estratégica</a>
+  </section>
+
+</main>
+
+<!-- FOOTER -->
+<footer class="footer">
+  <p>© 2025 Biiotech — Arquitetura de Decisão Orientada a Dados</p>
 </footer>
 
 </body>
 </html>
-
-
-
