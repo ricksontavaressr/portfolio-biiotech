@@ -76,15 +76,14 @@ a:hover{
   padding:14px 20px;
 }
 
-/* LOGO */
-.logo a{
-  font-size:18px;
-  font-weight:800;
-  color:#16325c;
-  letter-spacing:0.2px;
+/* ---------- LOGO (CORRIGIDO) ---------- */
+.logo img{
+  height:48px;      /* tamanho executivo ideal */
+  width:auto;       /* mantém proporção */
+  display:block;
 }
 
-/* MENU DESKTOP */
+/* ---------- MENU DESKTOP ---------- */
 .nav-links{
   list-style:none;
   display:flex;
@@ -110,7 +109,7 @@ a:hover{
   font-weight:800;
 }
 
-/* MENU MOBILE (compacto e sempre visível) */
+/* ---------- MENU MOBILE ---------- */
 .mobile-nav{
   display:none;
   gap:10px;
@@ -167,7 +166,7 @@ a:hover{
   margin-bottom:18px;
 }
 
-/* CTAs */
+/* ---------- CTAs ---------- */
 .cta{
   display:inline-block;
   background:var(--accent);
@@ -276,6 +275,11 @@ a:hover{
    ========================================================= */
 
 @media(max-width:880px){
+
+  /* LOGO MOBILE */
+  .logo img{
+    height:42px;
+  }
 
   .hero{
     flex-direction:column;
