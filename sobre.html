@@ -3,7 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sobre — Biiotech</title>
+
+    <title>Biiotech — Sobre | Arquitetura de Decisão</title>
 
     <style>
         :root {
@@ -14,12 +15,13 @@
             --cinza-medio: #4A4A4A;
             --cinza-claro: #F5F7FA;
             --cta: #0057E7;
+            --fundo: #F5F7FA;
             --fonte: "Inter", Arial, sans-serif;
         }
 
         body {
             margin: 0;
-            background: var(--cinza-claro);
+            background: var(--fundo);
             font-family: var(--fonte);
             line-height: 1.6;
             color: var(--cinza-escuro);
@@ -38,7 +40,8 @@
 
         header h1 {
             margin: 0;
-            font-size: 22px;
+            font-size: 20px;
+            font-weight: 600;
         }
 
         nav {
@@ -56,32 +59,64 @@
             text-decoration: underline;
         }
 
-        .container {
+        .hero {
+            margin-top: 110px;
+            padding: 50px;
+            background: var(--azul-claro);
+            border-radius: 8px;
             width: 80%;
-            margin: 140px auto 50px auto;
-            background: white;
-            padding: 40px;
-            border-radius: 10px;
-            box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+            margin-left: auto;
+            margin-right: auto;
+            text-align: center;
         }
 
-        h2 {
+        .hero h2 {
+            font-size: 32px;
             color: var(--azul-escuro);
-            margin-top: 0;
+            margin-bottom: 15px;
         }
 
-        h3 {
-            color: var(--azul-medio);
+        .hero p {
+            font-size: 18px;
+            color: var(--cinza-medio);
+            max-width: 850px;
+            margin: 0 auto;
         }
 
-        .foto-perfil {
-            width: 200px;
-            height: 200px;
-            border-radius: 50%;
+        .section {
+            width: 80%;
+            margin: 50px auto;
+        }
+
+        .content {
+            display: flex;
+            gap: 40px;
+            align-items: center;
+        }
+
+        .content-text {
+            flex: 2;
+        }
+
+        .content-text p {
+            font-size: 17px;
+            color: var(--cinza-medio);
+            margin-bottom: 15px;
+        }
+
+        .content-img {
+            flex: 1;
+            text-align: center;
+        }
+
+        .content-img img {
+            width: 260px;
+            height: 260px;
             object-fit: cover;
-            border: 6px solid var(--azul-claro);
-            display: block;
-            margin-bottom: 20px;
+            border-radius: 50%;
+            border: 6px solid white;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+            background: #ddd;
         }
 
         footer {
@@ -93,7 +128,10 @@
         }
 
         @media (max-width: 900px) {
-            .container { width: 92%; }
+            .content {
+                flex-direction: column;
+                text-align: center;
+            }
         }
     </style>
 </head>
@@ -104,82 +142,76 @@
     <h1>Biiotech — Arquitetura de Decisão Orientada a Dados</h1>
     <nav>
         <a href="index.html">Início</a>
-        <a href="services.html">Como Atuamos</a>
-        <a href="sobre.html">Sobre</a>
+        <a href="services.html">Como atuamos</a>
         <a href="contato.html">Contato</a>
     </nav>
 </header>
 
-<div class="container">
-
-    <img class="foto-perfil" src="https://via.placeholder.com/200" alt="Rickson Tavares">
-
-    <h2>Quem está por trás da Biiotech</h2>
-
+<section class="hero">
+    <h2>Sobre a Biiotech</h2>
     <p>
-        Meu nome é <strong>Rickson N. Tavares</strong>.
-        Antes de trabalhar com dados, trabalhei com <strong>decisão real</strong>.
+        Arquitetura de decisão nasce quando experiência prática
+        encontra estrutura analítica em cenários onde errar ficou caro.
     </p>
+</section>
 
-    <p>
-        Atuei por mais de duas décadas como empreendedor, gestor e consultor em
-        varejo, indústria e operações comerciais. Tomei decisões de compra,
-        estoque, precificação, expansão e corte — com impacto direto no caixa.
+<section class="section">
+    <div class="content">
+
+        <div class="content-text">
+            <p>
+                A Biiotech foi construída a partir de uma vivência real em negócios,
+                operações e tomada de decisão sob pressão.
+                Antes de atuar com dados e sistemas,
+                estive diretamente envolvido com varejo,
+                indústria, distribuição e operações comerciais.
+            </p>
+
+            <p>
+                Ao longo de mais de duas décadas como empreendedor,
+                consultor e executivo de campo,
+                acompanhei de perto como decisões de compra,
+                estoque, preço e alocação de capital
+                impactam diretamente o caixa e a sustentabilidade das empresas.
+            </p>
+
+            <p>
+                Nos últimos anos, essa experiência foi complementada
+                por atuação profunda em análise de dados,
+                sistemas de informação e arquitetura analítica,
+                permitindo conectar o que os dados mostram
+                com o que o decisor realmente precisa enxergar.
+            </p>
+
+            <p>
+                Hoje, a Biiotech atua como
+                <strong>Arquiteta de Decisão Orientada a Dados</strong>,
+                organizando informação, reduzindo incerteza
+                e apoiando CEOs e diretores
+                a decidir com mais clareza em ambientes complexos.
+            </p>
+        </div>
+
+        <div class="content-img">
+            <!-- FOTO PROFISSIONAL
+                 Use aqui sua foto (ex: Foto-Prof.jpeg)
+                 Fundo neutro, postura executiva
+            -->
+            <img src="Foto-Prof.jpeg" alt="Rickson Tavares">
+        </div>
+
+    </div>
+</section>
+
+<section class="section">
+    <p style="font-size:17px; color:var(--cinza-medio); max-width:900px;">
+        A atuação da Biiotech não substitui a experiência do decisor.
+        Ela a fortalece.
+        Nosso trabalho é estruturar o processo decisório
+        para que boas decisões continuem sendo boas
+        mesmo quando o cenário muda.
     </p>
-
-    <p>
-        Foi nesse contexto que percebi algo recorrente: empresas não quebram por
-        falta de dados, quebram por <strong>decidir com modelos que já não leem
-        corretamente o cenário</strong>.
-    </p>
-
-    <h3>Da experiência à arquitetura de decisão</h3>
-
-    <p>
-        A Biiotech nasce da convergência entre vivência prática de negócio e
-        análise estruturada de dados.
-    </p>
-
-    <p>
-        Não atuo como analista isolado, nem como consultor genérico.
-        Atuo como <strong>Arquiteto de Decisão Orientada a Dados</strong> —
-        estruturando critérios, leituras e modelos que apoiam quem decide sob
-        pressão.
-    </p>
-
-    <h3>Como penso o meu papel</h3>
-
-    <ul>
-        <li>Não substituo a experiência do decisor — eu a potencializo</li>
-        <li>Não julgo decisões passadas — estruturo decisões futuras</li>
-        <li>Não entrego relatórios — entrego clareza</li>
-    </ul>
-
-    <h3>Quando meu trabalho faz sentido</h3>
-
-    <p>
-        Meu trabalho é indicado para organizações onde:
-    </p>
-
-    <ul>
-        <li>o cenário mudou mais rápido que os modelos tradicionais</li>
-        <li>errar ficou caro demais</li>
-        <li>o histórico perdeu confiabilidade</li>
-        <li>decidir exige mais do que intuição</li>
-    </ul>
-
-    <h3>Visão</h3>
-
-    <p>
-        Em mercados cada vez mais restritivos, quem prospera não é quem
-        trabalha mais dados — é quem <strong>decide melhor</strong>.
-    </p>
-
-    <p>
-        A Biiotech existe para estruturar esse nível de decisão.
-    </p>
-
-</div>
+</section>
 
 <footer>
     © 2025 Biiotech — Arquitetura de Decisão Orientada a Dados
