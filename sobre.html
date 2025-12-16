@@ -5,19 +5,28 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Biiotech — Sobre | Arquitetura de Decisão</title>
 
-    <!-- CSS GLOBAL -->
+    <!-- CSS GLOBAL
+         ✔ Caminho correto
+         ✔ Arquivo único compartilhado com todo o site
+    -->
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-<!-- HEADER PADRÃO -->
+<!-- ======================================================
+     HEADER PADRÃO
+     ✔ Estrutura consistente com index.html
+     ✔ Logo controlada via .logo img no CSS
+     ✔ Navegação desktop + mobile
+     ====================================================== -->
 <header class="header">
   <nav class="navbar">
 
     <div class="logo">
       <a href="index.html">
-        <img src="imagens/Biiotech.jpeg" alt="Biiotech — Arquitetura de Decisão Orientada a Dados">
+        <img src="imagens/Biiotech.jpeg"
+             alt="Biiotech — Arquitetura de Decisão Orientada a Dados">
       </a>
     </div>
 
@@ -30,7 +39,9 @@
       <li><a href="contato.html">Contato</a></li>
     </ul>
 
-    <!-- MENU MOBILE -->
+    <!-- MENU MOBILE
+         ✔ Visível apenas no breakpoint definido no CSS
+    -->
     <div class="mobile-nav">
       <a href="index.html">Início</a>
       <a href="services.html">Atuação</a>
@@ -40,10 +51,17 @@
   </nav>
 </header>
 
-<!-- CONTEÚDO PRINCIPAL -->
+<!-- ======================================================
+     CONTEÚDO PRINCIPAL
+     ✔ container centralizado
+     ✔ largura controlada por --maxw
+     ====================================================== -->
 <main class="container">
 
-  <!-- HERO -->
+  <!-- HERO
+       ✔ Mesmo componente visual do restante do site
+       ✔ Sem imagem aqui (coerente com Sobre)
+  -->
   <section class="hero">
     <div class="hero-left">
       <h1>Sobre a Biiotech</h1>
@@ -55,11 +73,18 @@
     </div>
   </section>
 
-  <!-- CONTEÚDO AUTORIDADE -->
+  <!-- ====================================================
+       CONTEÚDO DE AUTORIDADE
+       ✔ Grid responsivo
+       ✔ Texto + imagem separados semanticamente
+       ==================================================== -->
   <section class="section">
     <div class="grid">
 
-      <!-- TEXTO -->
+      <!-- TEXTO PRINCIPAL
+           ✔ card padrão
+           ✔ span 2 colunas apenas no desktop
+      -->
       <div class="card" style="grid-column: span 2;">
         <p class="small">
           A Biiotech foi construída a partir de vivência real em negócios,
@@ -97,12 +122,15 @@
         </p>
       </div>
 
-      <!-- FOTO -->
+      <!-- FOTO DO FUNDADOR
+           ✔ card-center aplicado corretamente
+           ✔ .photo-profile sobrescreve .card img
+           ✔ Formato circular garantido no CSS
+      -->
       <div class="card card-center">
         <img src="imagens/Foto-Prof.jpeg"
              alt="Rickson Tavares — Biiotech"
              class="photo-profile">
-
         <p class="small">
           Rickson Tavares<br>
           Fundador — Biiotech
@@ -112,7 +140,11 @@
     </div>
   </section>
 
-  <!-- FECHAMENTO -->
+  <!-- ====================================================
+       FECHAMENTO
+       ✔ Mensagem clara de posicionamento
+       ✔ Sem CTA agressivo (correto para Sobre)
+       ==================================================== -->
   <section class="section">
     <p class="small">
       A atuação da Biiotech não substitui a experiência do decisor.
@@ -125,12 +157,16 @@
 
 </main>
 
-<!-- FOOTER -->
+<!-- FOOTER
+     ✔ Footer único e consistente em todo o site
+-->
 <footer class="footer">
   <p>© 2025 Biiotech — Arquitetura de Decisão Orientada a Dados</p>
 </footer>
 
 </body>
 </html>
+
+
 
 
