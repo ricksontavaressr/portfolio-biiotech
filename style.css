@@ -290,6 +290,23 @@ a:hover{
   }
 }
 
+/* =========================================================
+   OVERRIDE FINAL — FOTO PERFIL (SOBRE)
+   Deve ficar NO FINAL do style.css
+   ========================================================= */
+
+.card img.photo-profile{
+  width:240px;
+  height:240px;
+  max-width:none;
+  object-fit:cover;
+  border-radius:50%;
+  box-shadow:0 10px 28px rgba(11,20,40,0.18);
+
+  display:block;
+  margin:0 auto 12px;
+}
+
 
 
 
