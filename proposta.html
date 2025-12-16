@@ -1,124 +1,255 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-<meta charset="utf-8"/>
-<meta name="viewport" content="width=device-width,initial-scale=1"/>
-<title>Modelo de Atuação — Biiotech</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<style>
- body{font-family:Inter,Arial,sans-serif;background:#fff;margin:0;color:#111}
- header{background:#fafafa;padding:12px 20px;border-bottom:1px solid #eee;display:flex;align-items:center;justify-content:space-between}
- .wrap{max-width:900px;margin:28px auto;padding:18px}
- h1{color:#1A4D8F}
- h2{color:#1A4D8F}
- .box{background:#f7f9fc;padding:20px;border-radius:10px;border:1px solid #e6eefc}
- .btn{display:inline-block;background:#007bff;color:#fff;padding:10px 14px;border-radius:8px;text-decoration:none;margin-top:12px}
- footer{background:#0b1320;color:#fff;padding:18px;text-align:center;margin-top:18px}
-</style>
+    <title>Biiotech — Proposta de Atuação | Arquitetura de Decisão</title>
+
+    <style>
+        :root {
+            --azul-escuro: #1A4D8F;
+            --azul-medio: #2C6ECC;
+            --azul-claro: #E8F1FC;
+            --cinza-escuro: #1B1B1B;
+            --cinza-medio: #4A4A4A;
+            --cinza-claro: #F5F7FA;
+            --cta: #0057E7;
+            --fundo: #F5F7FA;
+            --fonte: "Inter", Arial, sans-serif;
+        }
+
+        body {
+            margin: 0;
+            background: var(--fundo);
+            font-family: var(--fonte);
+            line-height: 1.6;
+            color: var(--cinza-escuro);
+        }
+
+        header {
+            background: var(--azul-escuro);
+            padding: 18px 40px;
+            color: white;
+            position: fixed;
+            top: 0;
+            width: 100%;
+            box-shadow: 0 2px 6px rgba(0,0,0,0.15);
+            z-index: 1000;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 20px;
+            font-weight: 600;
+        }
+
+        nav {
+            margin-top: 6px;
+        }
+
+        nav a {
+            color: white;
+            margin-right: 20px;
+            text-decoration: none;
+            font-weight: 500;
+        }
+
+        nav a:hover {
+            text-decoration: underline;
+        }
+
+        .hero {
+            margin-top: 110px;
+            padding: 50px;
+            background: var(--azul-claro);
+            border-radius: 8px;
+            width: 80%;
+            margin-left: auto;
+            margin-right: auto;
+            text-align: center;
+        }
+
+        .hero h2 {
+            font-size: 32px;
+            color: var(--azul-escuro);
+            margin-bottom: 15px;
+        }
+
+        .hero p {
+            font-size: 18px;
+            color: var(--cinza-medio);
+            max-width: 900px;
+            margin: 0 auto;
+        }
+
+        .section {
+            width: 80%;
+            margin: 50px auto;
+        }
+
+        .section h2 {
+            color: var(--azul-escuro);
+            margin-bottom: 15px;
+            font-size: 28px;
+        }
+
+        .section p {
+            font-size: 17px;
+            color: var(--cinza-medio);
+            max-width: 900px;
+            margin-bottom: 15px;
+        }
+
+        .steps {
+            margin-top: 30px;
+        }
+
+        .step {
+            background: white;
+            padding: 25px;
+            border-radius: 8px;
+            margin-bottom: 20px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+        }
+
+        .step h3 {
+            color: var(--azul-escuro);
+            margin-bottom: 10px;
+        }
+
+        footer {
+            background: var(--azul-escuro);
+            color: white;
+            text-align: center;
+            padding: 25px;
+            margin-top: 50px;
+        }
+    </style>
 </head>
 
 <body>
 
 <header>
-  <img src="imagens/Biiotech.jpeg" alt="Biiotech" style="height:52px"/>
-  <nav>
-    <a href="index.html" style="text-decoration:none;color:#333;font-weight:600">Início</a>
-  </nav>
+    <h1>Biiotech — Arquitetura de Decisão Orientada a Dados</h1>
+    <nav>
+        <a href="index.html">Início</a>
+        <a href="services.html">Como atuamos</a>
+        <a href="cases.html">Casos</a>
+        <a href="contato.html">Contato</a>
+    </nav>
 </header>
 
-<main class="wrap">
-
-  <h1>Modelo de Atuação</h1>
-
-  <p style="max-width:820px;color:#444">
-    O trabalho da Biiotech não começa com ferramentas, dashboards ou automações.
-    Começa com uma <strong>decisão crítica</strong>.
-  </p>
-
-  <div class="box">
-
-    <h2>Resumo Executivo</h2>
-
+<section class="hero">
+    <h2>Modelo de atuação</h2>
     <p>
-      A Biiotech atua como <strong>Arquiteta de Decisão Orientada a Dados</strong>,
-      apoiando CEOs e diretores na estruturação de decisões estratégicas em
-      cenários de alta incerteza, pressão de margem e mudança constante de
-      comportamento de mercado.
+        Cada projeto da Biiotech é estruturado para apoiar decisões críticas
+        em cenários onde errar deixou de ser opção.
+        O foco não está em tecnologia,
+        mas na clareza e segurança da decisão.
     </p>
+</section>
 
+<section class="section">
+    <h2>Princípios do trabalho</h2>
     <p>
-      Nosso papel não é substituir a experiência do decisor, mas
-      <strong>estruturar critérios, leituras e modelos</strong> que permitam
-      decidir com mais segurança quando o histórico já não responde.
+        A Biiotech não atua por demanda técnica pontual
+        nem por entrega de relatórios isolados.
+        Nosso trabalho parte de um princípio simples:
+        decisões estratégicas precisam de estrutura
+        para continuar sendo boas ao longo do tempo.
     </p>
-
-    <h2>Como o trabalho acontece</h2>
-
-    <ol style="color:#444">
-      <li>
-        <strong>Conversa inicial estruturada</strong><br>
-        Entendimento do contexto, da decisão crítica e dos riscos envolvidos.
-      </li>
-      <li>
-        <strong>Diagnóstico de decisão</strong><br>
-        Identificação de onde o modelo atual perdeu sinal frente ao novo cenário.
-      </li>
-      <li>
-        <strong>Arquitetura decisória</strong><br>
-        Estruturação de critérios objetivos, simulações e alertas de impacto.
-      </li>
-      <li>
-        <strong>Acompanhamento estratégico</strong><br>
-        Ajuste contínuo para garantir consistência mesmo com mudança de cenário.
-      </li>
-    </ol>
-
-    <h2>O que este modelo não é</h2>
-
-    <ul style="color:#444">
-      <li>Não é venda de software ou ferramenta</li>
-      <li>Não é pacote de dashboards</li>
-      <li>Não é contratação por hora</li>
-      <li>Não é consultoria genérica</li>
-    </ul>
-
-    <h2>Como falamos de investimento</h2>
-
     <p>
-      O investimento é definido após o diagnóstico, com base:
+        Por isso, cada atuação é desenhada sob medida,
+        respeitando o contexto, o mercado
+        e a experiência de quem decide.
     </p>
+</section>
 
-    <ul style="color:#444">
-      <li>na complexidade da decisão</li>
-      <li>no nível de risco envolvido</li>
-      <li>no impacto financeiro estimado</li>
-    </ul>
+<section class="section">
+    <h2>Etapas da atuação</h2>
 
+    <div class="steps">
+
+        <div class="step">
+            <h3>1. Conversa de diagnóstico</h3>
+            <p>
+                O primeiro passo é uma conversa estruturada
+                para entender o cenário,
+                o contexto decisório
+                e os principais pontos de incerteza.
+            </p>
+            <p>
+                Essa conversa não é uma apresentação de BI
+                nem uma proposta comercial.
+                É um alinhamento estratégico.
+            </p>
+        </div>
+
+        <div class="step">
+            <h3>2. Diagnóstico de decisão</h3>
+            <p>
+                A partir do alinhamento inicial,
+                conduzimos um diagnóstico aprofundado
+                para identificar onde os modelos atuais
+                perderam precisão frente ao novo cenário.
+            </p>
+            <p>
+                O foco é revelar riscos,
+                impactos potenciais
+                e oportunidades de ajuste decisório.
+            </p>
+        </div>
+
+        <div class="step">
+            <h3>3. Arquitetura decisória</h3>
+            <p>
+                Estruturamos critérios,
+                modelos analíticos
+                e simulações
+                que sustentam decisões executivas
+                com maior previsibilidade.
+            </p>
+            <p>
+                O objetivo é reduzir incerteza
+                antes que ela se transforme em impacto financeiro.
+            </p>
+        </div>
+
+        <div class="step">
+            <h3>4. Acompanhamento estratégico</h3>
+            <p>
+                Quando necessário,
+                apoiamos o uso contínuo da arquitetura decisória,
+                garantindo consistência
+                mesmo quando o ambiente muda.
+            </p>
+            <p>
+                Decidir bem é processo,
+                não evento isolado.
+            </p>
+        </div>
+
+    </div>
+</section>
+
+<section class="section">
+    <h2>Como tratamos investimento</h2>
     <p>
-      Não trabalhamos com tabelas públicas de preço.
-      Cada decisão exige um nível diferente de estrutura.
+        O investimento é definido de acordo
+        com a complexidade da decisão,
+        o impacto envolvido
+        e o escopo da atuação.
     </p>
-
-    <h2>Próximo passo</h2>
-
     <p>
-      Se você sente que decidir ficou mais difícil e que errar ficou caro demais,
-      o próximo passo é uma conversa estruturada.
+        Não trabalhamos por hora
+        nem por volume de dados.
+        Trabalhamos por impacto decisório.
     </p>
-
-    <p>
-      Não é uma apresentação técnica.<br>
-      <strong>É uma conversa sobre decisões.</strong>
-    </p>
-
-    <a class="btn" href="contato.html">Solicitar conversa de diagnóstico</a>
-
-  </div>
-
-</main>
+</section>
 
 <footer>
-  © 2025 Biiotech — Arquitetura de Decisão Orientada a Dados
+    © 2025 Biiotech — Arquitetura de Decisão Orientada a Dados
 </footer>
 
 </body>
