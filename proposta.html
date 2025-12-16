@@ -3,260 +3,181 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Biiotech — Modelo de Atuação | Arquitetura de Decisão</title>
 
-    <title>Biiotech — Proposta de Atuação | Arquitetura de Decisão</title>
-
-    <style>
-        :root {
-            --azul-escuro: #1A4D8F;
-            --azul-medio: #2C6ECC;
-            --azul-claro: #E8F1FC;
-            --cinza-escuro: #1B1B1B;
-            --cinza-medio: #4A4A4A;
-            --cinza-claro: #F5F7FA;
-            --cta: #0057E7;
-            --fundo: #F5F7FA;
-            --fonte: "Inter", Arial, sans-serif;
-        }
-
-        body {
-            margin: 0;
-            background: var(--fundo);
-            font-family: var(--fonte);
-            line-height: 1.6;
-            color: var(--cinza-escuro);
-        }
-
-        header {
-            background: var(--azul-escuro);
-            padding: 18px 40px;
-            color: white;
-            position: fixed;
-            top: 0;
-            width: 100%;
-            box-shadow: 0 2px 6px rgba(0,0,0,0.15);
-            z-index: 1000;
-        }
-
-        header h1 {
-            margin: 0;
-            font-size: 20px;
-            font-weight: 600;
-        }
-
-        nav {
-            margin-top: 6px;
-        }
-
-        nav a {
-            color: white;
-            margin-right: 20px;
-            text-decoration: none;
-            font-weight: 500;
-        }
-
-        nav a:hover {
-            text-decoration: underline;
-        }
-
-        .hero {
-            margin-top: 110px;
-            padding: 50px;
-            background: var(--azul-claro);
-            border-radius: 8px;
-            width: 80%;
-            margin-left: auto;
-            margin-right: auto;
-            text-align: center;
-        }
-
-        .hero h2 {
-            font-size: 32px;
-            color: var(--azul-escuro);
-            margin-bottom: 15px;
-        }
-
-        .hero p {
-            font-size: 18px;
-            color: var(--cinza-medio);
-            max-width: 900px;
-            margin: 0 auto;
-        }
-
-        .section {
-            width: 80%;
-            margin: 50px auto;
-        }
-
-        .section h2 {
-            color: var(--azul-escuro);
-            margin-bottom: 15px;
-            font-size: 28px;
-        }
-
-        .section p {
-            font-size: 17px;
-            color: var(--cinza-medio);
-            max-width: 900px;
-            margin-bottom: 15px;
-        }
-
-        .steps {
-            margin-top: 30px;
-        }
-
-        .step {
-            background: white;
-            padding: 25px;
-            border-radius: 8px;
-            margin-bottom: 20px;
-            box-shadow: 0 2px 8px rgba(0,0,0,0.08);
-        }
-
-        .step h3 {
-            color: var(--azul-escuro);
-            margin-bottom: 10px;
-        }
-
-        footer {
-            background: var(--azul-escuro);
-            color: white;
-            text-align: center;
-            padding: 25px;
-            margin-top: 50px;
-        }
-    </style>
+    <!-- CSS GLOBAL -->
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-<header>
-    <h1>Biiotech — Arquitetura de Decisão Orientada a Dados</h1>
-    <nav>
-        <a href="index.html">Início</a>
-        <a href="services.html">Como atuamos</a>
-        <a href="sobre.html">Sobre</a>
-        <a href="cases.html">Casos</a>
-        <a href="proposta.html" class="active">Modelo de atuação</a>
-        <a href="contato.html">Contato</a>
-    </nav>
+<!-- HEADER PADRÃO -->
+<header class="header">
+  <nav class="navbar">
 
+    <div class="logo">
+      <a href="index.html">
+        <img src="imagens/Biiotech.jpeg" alt="Biiotech — Arquitetura de Decisão Orientada a Dados">
+      </a>
+    </div>
 
+    <ul class="nav-links">
+      <li><a href="index.html">Início</a></li>
+      <li><a href="services.html">Como atuamos</a></li>
+      <li><a href="sobre.html">Sobre</a></li>
+      <li><a href="cases.html">Casos</a></li>
+      <li><a href="proposta.html" class="active">Modelo</a></li>
+      <li><a href="contato.html">Contato</a></li>
+    </ul>
+
+    <!-- MENU MOBILE -->
+    <div class="mobile-nav">
+      <a href="index.html">Início</a>
+      <a href="services.html">Atuação</a>
+      <a href="contato.html">Contato</a>
+    </div>
+
+  </nav>
 </header>
 
-<section class="hero">
-    <h2>Modelo de atuação</h2>
-    <p>
-        Cada projeto da Biiotech é estruturado para apoiar decisões críticas
-        em cenários onde errar deixou de ser opção.
+<!-- CONTEÚDO PRINCIPAL -->
+<main class="container">
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="hero-left">
+      <h1>Modelo de atuação</h1>
+      <p class="lead">
+        Cada projeto da Biiotech é estruturado para apoiar
+        decisões críticas em cenários onde errar deixou de ser opção.
         O foco não está em tecnologia,
-        mas na clareza e segurança da decisão.
-    </p>
-</section>
-
-<section class="section">
-    <h2>Princípios do trabalho</h2>
-    <p>
-        A Biiotech não atua por demanda técnica pontual
-        nem por entrega de relatórios isolados.
-        Nosso trabalho parte de um princípio simples:
-        decisões estratégicas precisam de estrutura
-        para continuar sendo boas ao longo do tempo.
-    </p>
-    <p>
-        Por isso, cada atuação é desenhada sob medida,
-        respeitando o contexto, o mercado
-        e a experiência de quem decide.
-    </p>
-</section>
-
-<section class="section">
-    <h2>Etapas da atuação</h2>
-
-    <div class="steps">
-
-        <div class="step">
-            <h3>1. Conversa de diagnóstico</h3>
-            <p>
-                O primeiro passo é uma conversa estruturada
-                para entender o cenário,
-                o contexto decisório
-                e os principais pontos de incerteza.
-            </p>
-            <p>
-                Essa conversa não é uma apresentação de BI
-                nem uma proposta comercial.
-                É um alinhamento estratégico.
-            </p>
-        </div>
-
-        <div class="step">
-            <h3>2. Diagnóstico de decisão</h3>
-            <p>
-                A partir do alinhamento inicial,
-                conduzimos um diagnóstico aprofundado
-                para identificar onde os modelos atuais
-                perderam precisão frente ao novo cenário.
-            </p>
-            <p>
-                O foco é revelar riscos,
-                impactos potenciais
-                e oportunidades de ajuste decisório.
-            </p>
-        </div>
-
-        <div class="step">
-            <h3>3. Arquitetura decisória</h3>
-            <p>
-                Estruturamos critérios,
-                modelos analíticos
-                e simulações
-                que sustentam decisões executivas
-                com maior previsibilidade.
-            </p>
-            <p>
-                O objetivo é reduzir incerteza
-                antes que ela se transforme em impacto financeiro.
-            </p>
-        </div>
-
-        <div class="step">
-            <h3>4. Acompanhamento estratégico</h3>
-            <p>
-                Quando necessário,
-                apoiamos o uso contínuo da arquitetura decisória,
-                garantindo consistência
-                mesmo quando o ambiente muda.
-            </p>
-            <p>
-                Decidir bem é processo,
-                não evento isolado.
-            </p>
-        </div>
-
+        mas na clareza, consistência e segurança da decisão.
+      </p>
     </div>
-</section>
+  </section>
 
-<section class="section">
+  <!-- PRINCÍPIOS -->
+  <section class="section">
+    <h2>Princípios do trabalho</h2>
+
+    <p>
+      A Biiotech não atua por demanda técnica pontual
+      nem por entrega de relatórios isolados.
+      Nosso trabalho parte de um princípio simples:
+      decisões estratégicas precisam de estrutura
+      para continuar sendo boas ao longo do tempo.
+    </p>
+
+    <p>
+      Cada atuação é desenhada sob medida,
+      respeitando o contexto do negócio,
+      o mercado
+      e a experiência de quem decide.
+    </p>
+  </section>
+
+  <!-- ETAPAS -->
+  <section class="section">
+    <h2>Etapas da atuação</h2>
+  </section>
+
+  <section class="grid">
+
+    <div class="card">
+      <p class="kicker">Etapa 1</p>
+      <h3 class="title">Conversa de diagnóstico</h3>
+      <p class="small">
+        O primeiro passo é uma conversa estruturada
+        para compreender o cenário,
+        o contexto decisório
+        e os principais pontos de incerteza.
+      </p>
+      <p class="small">
+        Não é uma apresentação de BI
+        nem uma proposta comercial.
+        É alinhamento estratégico.
+      </p>
+    </div>
+
+    <div class="card">
+      <p class="kicker">Etapa 2</p>
+      <h3 class="title">Diagnóstico de decisão</h3>
+      <p class="small">
+        A partir do alinhamento inicial,
+        conduzimos um diagnóstico aprofundado
+        para identificar onde os modelos atuais
+        perderam precisão frente ao novo cenário.
+      </p>
+      <p class="small">
+        O foco é revelar riscos,
+        impactos potenciais
+        e oportunidades de ajuste decisório.
+      </p>
+    </div>
+
+    <div class="card">
+      <p class="kicker">Etapa 3</p>
+      <h3 class="title">Arquitetura decisória</h3>
+      <p class="small">
+        Estruturamos critérios objetivos,
+        modelos analíticos
+        e simulações
+        que sustentam decisões executivas
+        com maior previsibilidade.
+      </p>
+      <p class="small">
+        A decisão deixa de ser reativa
+        e passa a ser antecipatória.
+      </p>
+    </div>
+
+    <div class="card">
+      <p class="kicker">Etapa 4</p>
+      <h3 class="title">Acompanhamento estratégico</h3>
+      <p class="small">
+        Quando necessário,
+        apoiamos o uso contínuo da arquitetura decisória,
+        garantindo consistência
+        mesmo quando o ambiente muda.
+      </p>
+      <p class="small">
+        Decidir bem é processo,
+        não evento isolado.
+      </p>
+    </div>
+
+  </section>
+
+  <!-- INVESTIMENTO -->
+  <section class="section">
     <h2>Como tratamos investimento</h2>
-    <p>
-        O investimento é definido de acordo
-        com a complexidade da decisão,
-        o impacto envolvido
-        e o escopo da atuação.
-    </p>
-    <p>
-        Não trabalhamos por hora
-        nem por volume de dados.
-        Trabalhamos por impacto decisório.
-    </p>
-</section>
 
-<footer>
-    © 2025 Biiotech — Arquitetura de Decisão Orientada a Dados
+    <p>
+      O investimento é definido de acordo
+      com a complexidade da decisão,
+      o impacto envolvido
+      e o escopo da atuação.
+    </p>
+
+    <p>
+      Não trabalhamos por hora,
+      por volume de dados
+      ou por entregáveis genéricos.
+      Trabalhamos por impacto decisório.
+    </p>
+  </section>
+
+  <!-- CTA -->
+  <section class="section">
+    <a href="contato.html" class="cta">Agendar conversa estratégica</a>
+  </section>
+
+</main>
+
+<!-- FOOTER -->
+<footer class="footer">
+  <p>© 2025 Biiotech — Arquitetura de Decisão Orientada a Dados</p>
 </footer>
 
 </body>
 </html>
-
-
