@@ -4,20 +4,24 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Biiotech — Arquitetura de Decisão Orientada a Dados</title>
-
-    <!-- CSS GLOBAL -->
+    
+    <!-- Link para fontes modernas (Exemplo: Inter e Playfair Display) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="fonts.googleapis.com" rel="stylesheet">
+    
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-<!-- HEADER PADRÃO -->
-<header class="header">
-  <nav class="navbar">
-
+<!-- HEADER MODERNIZADO -->
+<header class="main-header">
+  <nav class="navbar container">
     <div class="logo">
       <a href="index.html">
-        <img src="imagens/Biiotech.jpeg" alt="Biiotech — Arquitetura de Decisão Orientada a Dados">
+        <!-- Recomendo usar um PNG transparente ou SVG aqui -->
+        <img src="imagens/Biiotech.jpeg" alt="Biiotech Logo">
       </a>
     </div>
 
@@ -27,137 +31,119 @@
       <li><a href="sobre.html">Sobre</a></li>
       <li><a href="cases.html">Casos</a></li>
       <li><a href="proposta.html">Modelo</a></li>
-      <li><a href="contato.html">Contato</a></li>
+      <li><a href="contato.html" class="nav-cta">Contato</a></li>
     </ul>
 
-    <!-- MENU MOBILE -->
-    <div class="mobile-nav">
-      <a href="index.html">Início</a>
-      <a href="services.html">Atuação</a>
-      <a href="contato.html">Contato</a>
-    </div>
-
+    <!-- Botão Hamburguer para Mobile (será ativado via CSS/JS) -->
+    <button class="mobile-menu-toggle" aria-label="Abrir Menu">
+      <span></span>
+      <span></span>
+    </button>
   </nav>
 </header>
 
-<!-- CONTEÚDO PRINCIPAL -->
-<main class="container">
+<main>
 
-  <!-- HERO -->
-  <section class="hero">
-    <div class="hero-left">
-      <h1>
-        Decisões críticas não podem depender apenas de intuição.
-      </h1>
+  <!-- HERO SECTION (Inspirado no Decision Architects) -->
+  <section class="hero-section container">
+    <div class="hero-grid">
+      <div class="hero-text-content">
+        <h1 class="display-title">
+          Decisões críticas não podem depender apenas de <span>intuição.</span>
+        </h1>
 
-      <p class="lead">
-        A Biiotech atua como <strong>arquiteta de decisões orientadas a dados</strong>,
-        apoiando CEOs e diretores a estruturar critérios,
-        reduzir incerteza e decidir com mais clareza
-        em ambientes complexos.
+        <p class="lead-text">
+          A Biiotech atua como <strong>arquiteta de decisões orientadas a dados</strong>,
+          apoiando CEOs e diretores a estruturar critérios,
+          reduzir incerteza e decidir com mais clareza em ambientes complexos.
+        </p>
+
+        <p class="tagline">
+          Não vendo ferramentas. Estruturo decisões.
+        </p>
+
+        <div class="hero-actions">
+          <a href="#contato" class="btn-primary">Entrar em contato</a>
+        </div>
+      </div>
+
+      <div class="hero-visual">
+        <div class="image-wrapper">
+          <img src="imagens/Foto-Prof-pb.jpg" alt="Rickson Tavares — Arquiteto de Decisão">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- EXPERIÊNCIA / GRID DE CASOS -->
+  <section class="experience-section bg-light">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title">Experiência aplicada em decisões reais</h2>
+        <p class="section-subtitle">
+          A atuação da Biiotech se construiu em contextos onde errar custa caro:
+          gestão pública, risco financeiro, crescimento empresarial e operações em escala.
+        </p>
+      </div>
+
+      <div class="modern-grid">
+        <article class="case-card">
+          <span class="kicker">Gestão Pública</span>
+          <h3 class="card-title">EMPREL · Recife</h3>
+          <p>Priorização de demandas críticas com base em prazo, risco e resolutividade, reduzindo ruído e antecipando gargalos decisórios.</p>
+        </article>
+
+        <article class="case-card">
+          <span class="kicker">Financeiro & Risco</span>
+          <h3 class="card-title">COPERGAS</h3>
+          <p>Estruturação de alertas e critérios decisórios para reduzir risco operacional e permitir decisões financeiras proativas.</p>
+        </article>
+
+        <article class="case-card">
+          <span class="kicker">Crescimento</span>
+          <h3 class="card-title">Varejo Multicanal</h3>
+          <p>Decisões de expansão orientadas por KPIs integrados, viabilizando crescimento sustentável e ganho de mercado.</p>
+        </article>
+
+        <article class="case-card">
+          <span class="kicker">Expansão Empresarial</span>
+          <h3 class="card-title">Casa Jóias</h3>
+          <p>Crescimento de 1 para 8 PDVs com controle de caixa, margem e estrutura organizacional.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA FINAL (CONVERSA) -->
+  <section class="cta-section container" id="contato">
+    <div class="cta-box">
+      <h2 class="display-title">Próximo passo</h2>
+      <p class="lead-text">
+        Se decidir ficou mais difícil e errar ficou mais caro, uma conversa estruturada faz sentido.
       </p>
-
-      <p class="small">
-        Não vendo ferramentas. Estruturo decisões.
-      </p>
-
-      <a href="#contato" class="cta">
+      <div class="cta-highlight">
+        <p>Não é uma apresentação de BI. <strong>É uma conversa sobre decisões.</strong></p>
+      </div>
+      <a class="btn-primary large" href="https://wa.me/55SEUNUMEROAQUI" target="_blank">
         Entrar em contato
       </a>
     </div>
-
-    <div class="hero-right">
-      <img src="imagens/Foto-Prof-pb.jpg"
-           alt="Rickson Tavares — Arquiteto de Decisão"
-           class="photo-hero">
-    </div>
   </section>
 
-  <!-- EXPERIÊNCIA / MINI-CASES -->
-  <section class="section">
-    <h2>Experiência aplicada em decisões reais</h2>
-
-    <p class="small">
-      A atuação da Biiotech se construiu em contextos onde errar custa caro:
-      gestão pública, risco financeiro, crescimento empresarial e operações em escala.
-    </p>
-
-    <div class="grid">
-
-      <div class="card">
-        <p class="kicker">Gestão Pública</p>
-        <h3 class="title">EMPREL · Recife</h3>
-        <p class="small">
-          Priorização de demandas críticas com base em prazo, risco e resolutividade,
-          reduzindo ruído e antecipando gargalos decisórios.
-        </p>
-      </div>
-
-      <div class="card">
-        <p class="kicker">Financeiro & Risco</p>
-        <h3 class="title">COPERGAS</h3>
-        <p class="small">
-          Estruturação de alertas e critérios decisórios para reduzir risco operacional
-          e permitir decisões financeiras proativas.
-        </p>
-      </div>
-
-      <div class="card">
-        <p class="kicker">Crescimento</p>
-        <h3 class="title">Varejo Multicanal</h3>
-        <p class="small">
-          Decisões de expansão orientadas por KPIs integrados,
-          viabilizando crescimento sustentável e ganho de mercado.
-        </p>
-      </div>
-
-      <div class="card">
-        <p class="kicker">Expansão Empresarial</p>
-        <h3 class="title">Casa Jóias</h3>
-        <p class="small">
-          Crescimento de 1 para 8 PDVs com controle de caixa,
-          margem e estrutura organizacional.
-        </p>
-      </div>
-
-    </div>
-  </section>
-
-  <!-- CTA PRINCIPAL (logo após prova social) -->
-  <section class="section card" id="contato">
-    <h2>Próximo passo</h2>
-
-    <p class="small">
-      Se decidir ficou mais difícil e errar ficou mais caro,
-      uma conversa estruturada faz sentido.
-    </p>
-
-    <p class="small">
-      Não é uma apresentação de BI.<br>
-      <strong>É uma conversa sobre decisões.</strong>
-    </p>
-
-    <a class="cta" href="https://wa.me/55SEUNUMEROAQUI" target="_blank">
-      Entrar em contato
-    </a>
-  </section>
-
-  <!-- FECHAMENTO -->
-  <section class="section">
-    <p class="small">
-      A Biiotech não substitui o decisor.
-      Estrutura o ambiente para que boas decisões
-      sejam mais prováveis — mesmo quando o cenário muda.
+  <!-- RODAPÉ DE FECHAMENTO -->
+  <section class="manifesto-section container">
+    <p class="manifesto-text">
+      A Biiotech não substitui o decisor. Estrutura o ambiente para que boas decisões sejam mais prováveis — mesmo quando o cenário muda.
     </p>
   </section>
 
 </main>
 
-<!-- FOOTER -->
-<footer class="footer">
-  <p>© 2025 Biiotech — Arquitetura de Decisão Orientada a Dados</p>
+<footer class="main-footer">
+  <div class="container footer-content">
+    <p>© 2025 Biiotech — Arquitetura de Decisão Orientada a Dados</p>
+  </div>
 </footer>
 
 </body>
 </html>
-
