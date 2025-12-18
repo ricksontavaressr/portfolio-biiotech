@@ -165,21 +165,13 @@ a:hover{
   margin-bottom:18px;
 }
 
-/* =========================================================
-   HERO
-   ========================================================= */
-
-/* ... hero ... */
-
-/* ---------- FOTO (HERO / SOBRE) ---------- */
-.photo-hero{ ... }
-
-.photo-profile{
-  width:240px;
-  height:240px;
-  object-fit:cover;
-  border-radius:50% !important;
-  box-shadow:0 10px 28px rgba(11,20,40,0.18);
+/* ---------- FOTO HERO (HOME) ---------- */
+.photo-hero{
+  max-width:280px;
+  width:100%;
+  height:auto;
+  border-radius:14px;
+  box-shadow:0 12px 32px rgba(11,20,40,0.18);
 }
 
 /* =========================================================
@@ -204,6 +196,7 @@ a:hover{
   text-align:center;
 }
 
+/* Regra genérica para imagens em cards */
 .card img{
   width:100%;
   height:170px;
@@ -211,21 +204,18 @@ a:hover{
   border-radius:var(--radius-sm);
   margin-bottom:12px;
 }
-/* ---------- FOTO PERFIL (SOBRE) ---------- */
+
+/* ---------- FOTO PERFIL (BASE) ---------- */
 .photo-profile{
   width:240px;
   height:240px;
   object-fit:cover;
   border-radius:50%;
-  box-shadow:0 10px 28px rgba(11,20,40,0.18);
-
-  /* neutraliza regras genéricas de .card img */
-  max-width:none;
-
-  /* alinhamento seguro */
-  display:block;
-  margin:0 auto 12px;
 }
+
+/* =========================================================
+   TIPOGRAFIA AUXILIAR
+   ========================================================= */
 
 .title{
   color:var(--accent);
@@ -306,7 +296,3 @@ a:hover{
   display:block;
   margin:0 auto 12px;
 }
-
-
-
-
