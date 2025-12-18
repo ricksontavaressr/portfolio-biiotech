@@ -1,227 +1,259 @@
 /* =========================================================
-   BIIOTECH — ARQUITETURA DE DECISÃO ORIENTADA A DADOS
-   style.css (global)
+   BIIOTECH 2025 — LUXURY MINIMALISM STYLE
+   Inspirado em Decision Architects
    ========================================================= */
 
-/* ---------- VARIABLES ---------- */
-:root{
-  --bg:#f5f7fb;
-  --card:#ffffff;
-  --accent:#0b63d6;
-  --accent-soft:#eef4ff;
-  --muted:#6b7280;
-  --dark:#0b1723;
-  --border:#e6e9ef;
-
-  --radius:12px;
-  --radius-sm:8px;
-  --maxw:1120px;
+:root {
+  --bg: #ffffff;
+  --bg-soft: #f8f9fa;
+  --accent: #0a1d37; /* Azul Noturno Profundo */
+  --accent-gold: #c5a059; /* Toque de sofisticação opcional */
+  --text-main: #1a1a1a;
+  --text-muted: #505050;
+  --white: #ffffff;
+  --border: rgba(0, 0, 0, 0.08);
+  
+  --font-serif: 'Playfair Display', serif;
+  --font-sans: 'Inter', sans-serif;
+  
+  --maxw: 1200px;
+  --transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
 }
 
-/* ---------- RESET ---------- */
-*{
-  box-sizing:border-box;
-  margin:0;
-  padding:0;
+/* ---------- RESET & BASE ---------- */
+* { box-sizing: border-box; margin: 0; padding: 0; }
+
+html { scroll-behavior: smooth; }
+
+body {
+  font-family: var(--font-sans);
+  background: var(--bg);
+  color: var(--text-main);
+  line-height: 1.7;
+  -webkit-font-smoothing: antialiased;
 }
 
-html, body{ height:100%; }
-
-body{
-  font-family:Inter, system-ui, -apple-system, "Segoe UI", Roboto, Arial, sans-serif;
-  background:var(--bg);
-  color:var(--dark);
-  line-height:1.6;
+.container {
+  max-width: var(--maxw);
+  margin: 0 auto;
+  padding: 0 40px;
 }
 
-/* ---------- LINKS ---------- */
-a{ color:var(--accent); text-decoration:none; }
-a:hover{ opacity:0.9; }
-
-/* ---------- BASE ---------- */
-.container{
-  max-width:var(--maxw);
-  margin:36px auto;
-  padding:0 20px;
+/* ---------- HEADER (MODERNO/GLASS) ---------- */
+.main-header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+  background: rgba(255, 255, 255, 0.85);
+  backdrop-filter: blur(12px);
+  border-bottom: 1px solid var(--border);
+  transition: var(--transition);
 }
 
-/* =========================================================
-   HEADER
-   ========================================================= */
-
-.header{
-  background:var(--card);
-  border-bottom:1px solid var(--border);
-  position:sticky;
-  top:0;
-  z-index:40;
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 90px;
 }
 
-.navbar{
-  display:flex;
-  justify-content:space-between;
-  align-items:center;
-  max-width:var(--maxw);
-  margin:0 auto;
-  padding:14px 20px;
+.logo img {
+  height: 42px;
+  filter: grayscale(1) contrast(1.2); /* Estilo editorial */
+  transition: var(--transition);
 }
 
-.logo img{
-  height:48px;
+.logo img:hover { filter: none; }
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 35px;
+  align-items: center;
 }
 
-.nav-links{
-  list-style:none;
-  display:flex;
-  gap:20px;
+.nav-links a {
+  font-size: 14px;
+  font-weight: 500;
+  color: var(--text-main);
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  text-decoration: none;
+  transition: var(--transition);
 }
 
-.nav-links a{
-  font-weight:700;
-  color:#16325c;
-  padding:8px 10px;
+.nav-links a:hover, .nav-links a.active {
+  color: var(--accent-gold);
 }
 
-.nav-links a.active{
-  border-bottom:2px solid var(--accent);
+.nav-cta {
+  background: var(--accent);
+  color: var(--white) !important;
+  padding: 12px 24px;
+  border-radius: 2px; /* Bordas retas são mais "luxuosas" */
 }
 
-.mobile-nav{ display:none; }
-
-/* =========================================================
-   HERO
-   ========================================================= */
-
-.hero{
-  display:flex;
-  gap:28px;
-  align-items:flex-start; /* 🔴 CORREÇÃO PRINCIPAL */
-  background:linear-gradient(
-    180deg,
-    rgba(11,99,214,0.06),
-    rgba(11,99,214,0.02)
-  );
-  padding:36px;
-  border-radius:var(--radius);
-  margin-top:22px;
+/* ---------- HERO SECTION ---------- */
+.hero-section {
+  padding-top: 180px;
+  padding-bottom: 100px;
 }
 
-.hero-left{ flex:1; }
-
-.hero-right{
-  flex:0 0 auto;        /* não deixa crescer */
-  display:flex;
-  align-items:flex-start; /* alinha com o texto */
+.hero-grid {
+  display: grid;
+  grid-template-columns: 1.2fr 0.8fr;
+  gap: 80px;
+  align-items: center;
 }
 
-.hero h1{
-  font-size:36px;
-  color:var(--accent);
-  margin-bottom:12px;
+.display-title {
+  font-family: var(--font-serif);
+  font-size: clamp(42px, 5vw, 64px);
+  line-height: 1.1;
+  color: var(--accent);
+  margin-bottom: 30px;
 }
 
-.lead{
-  font-size:17px;
-  color:var(--muted);
+.display-title span {
+  font-style: italic;
+  font-weight: 400;
 }
 
-/* ---------- FOTO HERO HOME ---------- */
-.photo-hero{
-  max-width:280px;
-  width:100%;
-  border-radius:14px;
-  box-shadow:0 12px 32px rgba(11,20,40,0.18);
+.lead-text {
+  font-size: 1.2rem;
+  color: var(--text-muted);
+  max-width: 600px;
+  margin-bottom: 40px;
 }
 
-/* =========================================================
-   GRID / CARDS
-   ========================================================= */
-
-.grid{
-  display:grid;
-  grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
-  gap:18px;
-  margin-top:22px;
+.tagline {
+  font-size: 14px;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  color: var(--accent-gold);
+  margin-bottom: 20px;
 }
 
-.card{
-  background:var(--card);
-  padding:20px;
-  border-radius:var(--radius);
-  box-shadow:0 8px 24px rgba(11,20,40,0.06);
+.hero-visual .image-wrapper {
+  position: relative;
+  overflow: hidden;
+  border-radius: 4px;
 }
 
-.card-center{ text-align:center; }
-
-.card img{
-  width:100%;
-  height:170px;
-  object-fit:cover;
-  border-radius:var(--radius-sm);
+.hero-visual img {
+  width: 100%;
+  height: auto;
+  filter: grayscale(100%);
+  transition: var(--transition);
+  display: block;
 }
 
-/* =========================================================
-   FOTO PERFIL (SOBRE)
-   ========================================================= */
-
-.photo-profile{
-  width:220px;
-  height:220px;
-  object-fit:cover;
-  border-radius:50%;
-  box-shadow:0 10px 28px rgba(11,20,40,0.18);
-  display:block;
-  margin:0 auto;
+.hero-visual:hover img {
+  filter: grayscale(0%);
+  transform: scale(1.05);
 }
 
-/* Limite quando estiver no hero */
-.hero .photo-profile{
-  max-height:240px;
-  width:240px;
+/* ---------- GRID DE EXPERIÊNCIA ---------- */
+.experience-section {
+  padding: 120px 0;
+  background: var(--bg-soft);
 }
 
-/* =========================================================
-   TIPOGRAFIA
-   ========================================================= */
-
-.title{
-  color:var(--accent);
-  font-weight:800;
-  font-size:20px;
+.section-header {
+  margin-bottom: 80px;
+  max-width: 800px;
 }
 
-.small{
-  font-size:14px;
-  color:var(--muted);
+.section-title {
+  font-family: var(--font-serif);
+  font-size: 38px;
+  margin-bottom: 20px;
 }
 
-/* =========================================================
-   FOOTER
-   ========================================================= */
-
-.footer{
-  background:#071127;
-  color:#fff;
-  padding:28px 18px;
-  margin-top:36px;
-  text-align:center;
+.modern-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 1px; /* Efeito de linha divisória */
+  background: var(--border); /* Cor da linha */
+  border: 1px solid var(--border);
 }
 
-/* =========================================================
-   RESPONSIVE
-   ========================================================= */
+.case-card {
+  background: var(--white);
+  padding: 50px 40px;
+  transition: var(--transition);
+}
 
-@media(max-width:880px){
-  .hero{
-    flex-direction:column;
-    align-items:center;
-    text-align:center;
-  }
+.case-card:hover {
+  background: var(--accent);
+}
 
-  .hero-right{
-    margin-top:16px;
-  }
+.case-card:hover * {
+  color: var(--white);
+}
 
-  .nav-links{ display:none; }
-  .mobile-nav{ display:flex; }
+.kicker {
+  display: block;
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  color: var(--accent-gold);
+  margin-bottom: 15px;
+}
+
+.card-title {
+  font-family: var(--font-serif);
+  font-size: 22px;
+  margin-bottom: 15px;
+}
+
+/* ---------- CTA BOX ---------- */
+.cta-section {
+  padding: 100px 0;
+  text-align: center;
+}
+
+.cta-box {
+  background: var(--accent);
+  color: var(--white);
+  padding: 80px 40px;
+  border-radius: 4px;
+}
+
+.cta-box .display-title { color: var(--white); }
+
+.btn-primary {
+  display: inline-block;
+  background: var(--white);
+  color: var(--accent);
+  padding: 20px 45px;
+  text-transform: uppercase;
+  font-weight: 700;
+  letter-spacing: 2px;
+  margin-top: 30px;
+  transition: var(--transition);
+}
+
+.btn-primary:hover {
+  background: var(--accent-gold);
+  color: var(--white);
+}
+
+/* ---------- FOOTER ---------- */
+.main-footer {
+  padding: 60px 0;
+  border-top: 1px solid var(--border);
+  text-align: center;
+  font-size: 13px;
+  color: var(--text-muted);
+  letter-spacing: 1px;
+}
+
+/* ---------- RESPONSIVIDADE ---------- */
+@media (max-width: 992px) {
+  .hero-grid { grid-template-columns: 1fr; gap: 40px; text-align: center; }
+  .lead-text { margin: 0 auto 40px; }
+  .nav-links { display: none; } /* Ideal implementar menu mobile aqui */
+  .container { padding: 0 25px; }
 }
