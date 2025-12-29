@@ -12,34 +12,33 @@
 <body>
 
 <!-- HEADER PADRÃO -->
-<header class="header">
-  <nav class="navbar">
+<header class="header main-header">
+  <nav class="navbar container">
 
     <div class="logo">
       <a href="index.html">
-        <img src="imagens/Biiotech.jpeg"
-             alt="Biiotech — Arquitetura de Decisão Orientada a Dados">
+        <img src="imagens/Biiotech.jpeg" alt="Biiotech Logo">
       </a>
     </div>
+
+    <!-- Checkbox invisível controla o menu mobile -->
+    <input type="checkbox" id="menu-toggle" class="menu-toggle">
 
     <ul class="nav-links">
       <li><a href="index.html">Início</a></li>
       <li><a href="services.html">Como atuamos</a></li>
       <li><a href="sobre.html">Sobre</a></li>
       <li><a href="cases.html">Casos</a></li>
-      <li><a href="proposta.html" class="active">Modelo</a></li>
-      <li><a href="contato.html">Contato</a></li>
+      <li><a href="proposta.html">Modelo</a></li>
+      <li><a href="contato.html" class="nav-cta">Entrar em contato</a></li>
     </ul>
 
-    <div class="mobile-nav">
-      <a href="index.html">Início</a>
-      <a href="services.html">Como atuamos</a>
-      <a href="sobre.html">Sobre</a>
-      <a href="cases.html">Casos</a>
-      <a href="proposta.html">Modelo</a>
-      <a href="contato.html">Contato</a>
-    </div>
-
+    <!-- Ícone hamburguer -->
+    <label for="menu-toggle" class="mobile-menu-toggle" aria-label="Abrir Menu">
+      <span></span>
+      <span></span>
+      <span></span>
+    </label>
 
   </nav>
 </header>
@@ -188,4 +187,5 @@
 
 </body>
 </html>
+
 
