@@ -1,27 +1,33 @@
 /* =========================================================
-   BIIOTECH 2025 — LUXURY MINIMALISM STYLE
-   Inspirado em Decision Architects
+   BIIOTECH 2025 — LUXURY MINIMALISM
+   Arquitetura de Decisão • Design System Consolidado
+   FASE 2.1 + FASE 2.2
    ========================================================= */
 
+/* ---------- VARIÁVEIS GLOBAIS ---------- */
 :root {
   --bg: #ffffff;
   --bg-soft: #f8f9fa;
-  --accent: #0a1d37; /* Azul Noturno Profundo */
-  --accent-gold: #c5a059; /* Toque de sofisticação opcional */
+  --accent: #0a1d37;
+  --accent-gold: #c5a059;
   --text-main: #1a1a1a;
   --text-muted: #505050;
   --white: #ffffff;
   --border: rgba(0, 0, 0, 0.08);
-  
+
   --font-serif: 'Playfair Display', serif;
   --font-sans: 'Inter', sans-serif;
-  
+
   --maxw: 1200px;
   --transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
 }
 
 /* ---------- RESET & BASE ---------- */
-* { box-sizing: border-box; margin: 0; padding: 0; }
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
 
 html { scroll-behavior: smooth; }
 
@@ -39,8 +45,11 @@ body {
   padding: 0 40px;
 }
 
-/* ---------- HEADER (MODERNO/GLASS) ---------- */
-.main-header {
+/* =========================================================
+   HEADER & NAVEGAÇÃO (DESKTOP + MOBILE)
+   ========================================================= */
+
+.header.main-header {
   position: fixed;
   top: 0;
   width: 100%;
@@ -48,7 +57,6 @@ body {
   background: rgba(255, 255, 255, 0.85);
   backdrop-filter: blur(12px);
   border-bottom: 1px solid var(--border);
-  transition: var(--transition);
 }
 
 .navbar {
@@ -60,17 +68,20 @@ body {
 
 .logo img {
   height: 42px;
-  filter: grayscale(1) contrast(1.2); /* Estilo editorial */
+  filter: grayscale(1) contrast(1.2);
   transition: var(--transition);
 }
 
-.logo img:hover { filter: none; }
+.logo img:hover {
+  filter: none;
+}
 
+/* ---------- MENU DESKTOP ---------- */
 .nav-links {
   list-style: none;
   display: flex;
-  gap: 35px;
   align-items: center;
+  gap: 35px;
 }
 
 .nav-links a {
@@ -83,18 +94,42 @@ body {
   transition: var(--transition);
 }
 
-.nav-links a:hover, .nav-links a.active {
+.nav-links a:hover,
+.nav-links a.active {
   color: var(--accent-gold);
 }
 
+/* CTA DO MENU */
 .nav-cta {
   background: var(--accent);
   color: var(--white) !important;
   padding: 12px 24px;
-  border-radius: 2px; /* Bordas retas são mais "luxuosas" */
+  border-radius: 2px;
 }
 
-/* ---------- HERO SECTION ---------- */
+/* ---------- MENU MOBILE (CSS ONLY) ---------- */
+.menu-toggle {
+  display: none;
+}
+
+.mobile-menu-toggle {
+  display: none;
+  flex-direction: column;
+  gap: 6px;
+  cursor: pointer;
+}
+
+.mobile-menu-toggle span {
+  width: 26px;
+  height: 2px;
+  background: var(--accent);
+  transition: var(--transition);
+}
+
+/* =========================================================
+   HERO
+   ========================================================= */
+
 .hero-section {
   padding-top: 180px;
   padding-bottom: 100px;
@@ -136,17 +171,15 @@ body {
 }
 
 .hero-visual .image-wrapper {
-  position: relative;
   overflow: hidden;
   border-radius: 4px;
 }
 
 .hero-visual img {
   width: 100%;
-  height: auto;
+  display: block;
   filter: grayscale(100%);
   transition: var(--transition);
-  display: block;
 }
 
 .hero-visual:hover img {
@@ -154,15 +187,21 @@ body {
   transform: scale(1.05);
 }
 
-/* ---------- GRID DE EXPERIÊNCIA ---------- */
-.experience-section {
+/* =========================================================
+   SEÇÕES & GRID
+   ========================================================= */
+
+.section {
   padding: 120px 0;
+}
+
+.section-light {
   background: var(--bg-soft);
 }
 
 .section-header {
-  margin-bottom: 80px;
   max-width: 800px;
+  margin-bottom: 80px;
 }
 
 .section-title {
@@ -171,11 +210,12 @@ body {
   margin-bottom: 20px;
 }
 
+/* ---------- GRID DE EXPERIÊNCIA ---------- */
 .modern-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-  gap: 1px; /* Efeito de linha divisória */
-  background: var(--border); /* Cor da linha */
+  gap: 1px;
+  background: var(--border);
   border: 1px solid var(--border);
 }
 
@@ -194,12 +234,12 @@ body {
 }
 
 .kicker {
-  display: block;
   font-size: 12px;
   text-transform: uppercase;
   letter-spacing: 2px;
   color: var(--accent-gold);
   margin-bottom: 15px;
+  display: block;
 }
 
 .card-title {
@@ -208,7 +248,35 @@ body {
   margin-bottom: 15px;
 }
 
-/* ---------- CTA BOX ---------- */
+/* =========================================================
+   BOTÕES — DESIGN SYSTEM
+   ========================================================= */
+
+.btn {
+  display: inline-block;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-weight: 700;
+  text-decoration: none;
+  transition: var(--transition);
+}
+
+/* CTA PRINCIPAL */
+.btn-primary {
+  background: var(--white);
+  color: var(--accent);
+  padding: 20px 45px;
+}
+
+.btn-primary:hover {
+  background: var(--accent-gold);
+  color: var(--white);
+}
+
+/* =========================================================
+   CTA BOX
+   ========================================================= */
+
 .cta-section {
   padding: 100px 0;
   text-align: center;
@@ -221,26 +289,14 @@ body {
   border-radius: 4px;
 }
 
-.cta-box .display-title { color: var(--white); }
-
-.btn-primary {
-  display: inline-block;
-  background: var(--white);
-  color: var(--accent);
-  padding: 20px 45px;
-  text-transform: uppercase;
-  font-weight: 700;
-  letter-spacing: 2px;
-  margin-top: 30px;
-  transition: var(--transition);
-}
-
-.btn-primary:hover {
-  background: var(--accent-gold);
+.cta-box .display-title {
   color: var(--white);
 }
 
-/* ---------- FOOTER ---------- */
+/* =========================================================
+   FOOTER
+   ========================================================= */
+
 .main-footer {
   padding: 60px 0;
   border-top: 1px solid var(--border);
@@ -250,78 +306,50 @@ body {
   letter-spacing: 1px;
 }
 
-/* ---------- RESPONSIVIDADE ---------- */
-@media (max-width: 992px) {
-  .hero-grid { grid-template-columns: 1fr; gap: 40px; text-align: center; }
-  .lead-text { margin: 0 auto 40px; }
-  .nav-links { display: none; } /* Ideal implementar menu mobile aqui */
-  .container { padding: 0 25px; }
-}
-
 /* =========================================================
-   DESIGN SYSTEM — BASES (FASE 2.1)
-   Não altera visual — apenas consolida padrões
+   RESPONSIVIDADE & MENU MOBILE
    ========================================================= */
 
-/* ---------- BOTÕES (BASE) ---------- */
-.btn {
-  display: inline-block;
-  text-transform: uppercase;
-  letter-spacing: 2px;
-  font-weight: 700;
-  transition: var(--transition);
-  text-decoration: none;
-}
+@media (max-width: 992px) {
 
-/* CTA principal */
-.btn-primary {
-  background: var(--white);
-  color: var(--accent);
-  padding: 20px 45px;
-}
+  .container {
+    padding: 0 25px;
+  }
 
-.btn-primary:hover {
-  background: var(--accent-gold);
-  color: var(--white);
-}
+  .hero-grid {
+    grid-template-columns: 1fr;
+    gap: 40px;
+    text-align: center;
+  }
 
-/* CTA do menu */
-.nav-cta {
-  background: var(--accent);
-  color: var(--white) !important;
-  padding: 12px 24px;
-  border-radius: 2px;
-}
+  .lead-text {
+    margin: 0 auto 40px;
+  }
 
-/* ---------- TIPOGRAFIA (BASE) ---------- */
-.text-lead {
-  font-size: 1.2rem;
-  color: var(--text-muted);
-  max-width: 600px;
-}
+  .mobile-menu-toggle {
+    display: flex;
+  }
 
-.text-muted {
-  color: var(--text-muted);
-}
+  .nav-links {
+    position: fixed;
+    top: 90px;
+    left: 0;
+    width: 100%;
+    height: calc(100vh - 90px);
+    background: var(--bg);
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    transform: translateY(-120%);
+    transition: var(--transition);
+  }
 
-.text-kicker {
-  font-size: 12px;
-  text-transform: uppercase;
-  letter-spacing: 2px;
-  color: var(--accent-gold);
-}
+  .menu-toggle:checked ~ .nav-links {
+    transform: translateY(0);
+  }
 
-/* ---------- SEÇÕES (BASE) ---------- */
-.section {
-  padding: 120px 0;
+  .nav-links a {
+    font-size: 18px;
+  }
 }
-
-.section-light {
-  background: var(--bg-soft);
-}
-
-.section-dark {
-  background: var(--accent);
-  color: var(--white);
-}
-
