@@ -1,8 +1,8 @@
 import React, { useState } from 'react';
 import { motion } from 'framer-motion';
 import axios from 'axios';
-import { HiMail, HiPhone, HiLocationMarker, HiCheckCircle } from 'react-icons/hi';
-import { FaWhatsapp, FaLinkedin } from 'react-icons/fa';
+import { HiMail, HiPhone, HiCheckCircle } from 'react-icons/hi';
+import { FaWhatsapp } from 'react-icons/fa';
 
 const Contato = () => {
   const [formData, setFormData] = useState({
