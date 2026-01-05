@@ -1,5 +1,6 @@
 {
   "name": "biiotech-frontend",
+  "homepage": "https://www.biiotech.com.br",
   "version": "1.0.0",
   "private": true,
   "dependencies": {
