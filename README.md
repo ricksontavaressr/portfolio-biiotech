@@ -177,6 +177,8 @@ Biiotech - Arquitetura de Decisão Orientada a Dados
 - WhatsApp: (81) 99733-3025
 - Website: www.biiotech.com.br
 
+<!-- trigger deploy -->
+
 ---
 
 **© 2025 Biiotech - Todos os direitos reservados**
