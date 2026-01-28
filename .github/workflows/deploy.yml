@@ -24,12 +24,12 @@ jobs:
       - name: Install dependencies
         run: |
           cd frontend
-          npm install
+          yarn install --frozen-lockfile
 
       - name: Build React app
         run: |
           cd frontend
-          npm run build
+          yarn build
 
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v4
